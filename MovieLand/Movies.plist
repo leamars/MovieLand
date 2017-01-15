@@ -1,0 +1,4351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Movies</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Toy Story I</string>
+			<key>year</key>
+			<integer>1995</integer>
+			<key>length</key>
+			<integer>81</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Tom Hanks</string>
+				<string>Tim Allen</string>
+				<string>Don Rickles</string>
+				<string>Jim Varney</string>
+				<string>Wallace Shawn</string>
+				<string>John Ratzenberger</string>
+				<string>Annie Potts</string>
+				<string>John Morris</string>
+				<string>Erik von Detten</string>
+				<string>Laurie Metcalf</string>
+				<string>R. Lee Ermey</string>
+				<string>Sarah Freeman</string>
+				<string>Penn Jillette</string>
+				<string>Jack Angel</string>
+				<string>Spencer Aste</string>
+				<string>Greg Berg</string>
+				<string>Lisa Bradley</string>
+				<string>Kendall Cunningham</string>
+				<string>Debi Derryberry</string>
+				<string>Cody Dorkin</string>
+				<string>Bill Farmer</string>
+				<string>Craig Good</string>
+				<string>Gregory Grudt</string>
+				<string>Danielle Judovits</string>
+				<string>Sam Lasseter</string>
+				<string>Brittany Levenbrown</string>
+				<string>Sherry Lynn</string>
+				<string>Scott McAfee</string>
+				<string>Mickie McGowan</string>
+				<string>Ryan ODonohue</string>
+				<string>Jeff Pidgeon</string>
+				<string>Patrick Pinney</string>
+				<string>Phil Proctor</string>
+				<string>Jan Rabson</string>
+				<string>Joe Ranft</string>
+				<string>Andrew Stanton</string>
+				<string>Shane Sweet</string>
+				<string>Frank Welker</string>
+			</array>
+			<key>director</key>
+			<string>John Lasseter</string>
+			<key>genres</key>
+			<array>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>description</key>
+			<string>Woody the cowboy is young Andy’s favorite toy. Yet this changes when Andy get the new super toy Buzz Lightyear for his birthday. Now that Woody is no longer number one he plans his revenge on Buzz. Toy Story is a milestone in film history for being the first feature film to use entirely computer animation.</string>
+			<key>admissionRating</key>
+			<string>G</string>
+			<key>imageName</key>
+			<string>toy_story_ver1</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Schindlers List</string>
+			<key>year</key>
+			<integer>1993</integer>
+			<key>length</key>
+			<integer>195</integer>
+			<key>languages</key>
+			<array>
+				<string>Deutsch</string>
+				<string>Polski</string>
+				<string>עִבְרִית</string>
+				<string>English</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Liam Neeson</string>
+				<string>Ben Kingsley</string>
+				<string>Ralph Fiennes</string>
+				<string>Caroline Goodall</string>
+				<string>Jonathan Sagall</string>
+				<string>Embeth Davidtz</string>
+				<string>Malgorzata Gebel</string>
+				<string>Shmuel Levy</string>
+				<string>Mark Ivanir</string>
+				<string>Béatrice Macola</string>
+				<string>Andrzej Seweryn</string>
+				<string>Friedrich von Thun</string>
+				<string>Krzysztof Luft</string>
+				<string>Harry Nehring</string>
+				<string>Norbert Weisser</string>
+				<string>Adi Nitzan</string>
+				<string>Michael Schneider</string>
+				<string>Miri Fabian</string>
+				<string>Anna Mucha</string>
+				<string>Albert Misak</string>
+				<string>Aldona Grochal</string>
+				<string>Jacek Wójcicki</string>
+				<string>Beata Paluch</string>
+				<string>Piotr Polk</string>
+				<string>Ezra Dagan</string>
+				<string>Uri Avrahami</string>
+				<string>Elina Löwensohn</string>
+				<string>Magdalena Komornicka</string>
+				<string>Michael Gordon</string>
+			</array>
+			<key>director</key>
+			<string>Steven Spielberg</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>History</string>
+				<string>War</string>
+			</array>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>description</key>
+			<string>The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.</string>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>imageName</key>
+			<string>schindlers_list</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Life Is Beautiful</string>
+			<key>year</key>
+			<integer>1997</integer>
+			<key>length</key>
+			<integer>116</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+				<string>Deutsch</string>
+				<string>Italiano</string>
+				<string>Português</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Nicoletta Braschi</string>
+				<string>Roberto Benigni</string>
+				<string>Giorgio Cantarini</string>
+				<string>Giustino Durano</string>
+				<string>Amerigo Fontani</string>
+				<string>Sergio Bini Bustric</string>
+				<string>Lidia Alfonsi</string>
+				<string>Horst Buchholz</string>
+				<string>Pietro De Silva</string>
+				<string>Marisa Paredes</string>
+				<string>Giuliana Lojodice</string>
+				<string>Francesco Guzzo</string>
+				<string>Adelaide Alaïs</string>
+				<string>Verena Buratti</string>
+				<string>Hannes Hellmann</string>
+				<string>Wolfgang Hillinger</string>
+				<string>Antonio Prester</string>
+				<string>Gina Rovere</string>
+				<string>Laura Susanne Ruedeberg</string>
+				<string>Richard Sammel</string>
+				<string>Andrea Tidona</string>
+				<string>Dirk K. van den Berg</string>
+				<string>Omero Antonutti</string>
+			</array>
+			<key>director</key>
+			<string>Roberto Benigni</string>
+			<key>genres</key>
+			<array>
+				<string>Comedy</string>
+				<string>Drama</string>
+			</array>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>description</key>
+			<string>The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.</string>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>imageName</key>
+			<string>life_is_beautiful_ver1</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Gangs of New York</string>
+			<key>year</key>
+			<integer>2002</integer>
+			<key>length</key>
+			<integer>167</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+				<string>Gaeilge</string>
+				<string>Latin</string>
+				<string>普通话</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Leonardo DiCaprio</string>
+				<string>Daniel Day-Lewis</string>
+				<string>Cameron Diaz</string>
+				<string>Liam Neeson</string>
+				<string>Brendan Gleeson</string>
+				<string>John C. Reilly</string>
+				<string>Jim Broadbent</string>
+				<string>Roger Ashton-Griffiths</string>
+				<string>David Hemmings</string>
+				<string>Lawrence Gilliard Jr.</string>
+				<string>Michael Byrne</string>
+				<string>Gary Lewis</string>
+				<string>Henry Thomas</string>
+				<string>Barbara Bouchet</string>
+				<string>Brendan Dempsey</string>
+				<string>Nick Bartlett</string>
+				<string>Flaminia Fegarotti</string>
+			</array>
+			<key>director</key>
+			<string>Martin Scorsese</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>History</string>
+				<string>Crime</string>
+			</array>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>description</key>
+			<string>1863. America was born in the streets. Amsterdam Vallon returns to the Five Points of America to seek vengeance against the psychotic gangland kingpin, Bill the Butcher, who murdered his father years earlier. With an eager pickpocket by his side and a whole new army, Vallon fights his way to seek vengeance on the Butcher and restore peace in the area.</string>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>imageName</key>
+			<string>gangs_of_new_york_ver1</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Bright Lights: Starring Carrie Fisher and Debbie Reynolds</string>
+			<key>year</key>
+			<integer>2017</integer>
+			<key>length</key>
+			<integer>95</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Carrie Fisher</string>
+				<string>Debbie Reynolds</string>
+				<string>Todd Fisher</string>
+				<string>Eddie Fisher</string>
+				<string>Griffin Dunne</string>
+				<string>Billie Lourd</string>
+			</array>
+			<key>director</key>
+			<string>Alexis Bloom</string>
+			<key>genres</key>
+			<array>
+				<string>Documentary</string>
+			</array>
+			<key>rating</key>
+			<integer>4</integer>
+			<key>description</key>
+			<string>An intimate portrait of Hollywood royalty featuring Debbie Reynolds, Todd Fisher, and Carrie Fisher.</string>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>imageName</key>
+			<string>moviePlaceholder</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Collateral</string>
+			<key>year</key>
+			<integer>2004</integer>
+			<key>length</key>
+			<integer>120</integer>
+			<key>languages</key>
+			<array>
+				<string>Español</string>
+				<string>English</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Tom Cruise</string>
+				<string>Jamie Foxx</string>
+				<string>Jada Pinkett Smith</string>
+				<string>Mark Ruffalo</string>
+				<string>Peter Berg</string>
+				<string>Bruce McGill</string>
+				<string>Irma P. Hall</string>
+				<string>Barry Shabaka Henley</string>
+				<string>Javier Bardem</string>
+				<string>Steven Kozlowski</string>
+				<string>Richard T. Jones</string>
+				<string>James McBride</string>
+				<string>Klea Scott</string>
+				<string>Bodhi Elfman</string>
+				<string>Debi Mazar</string>
+				<string>Emilio Rivera</string>
+				<string>Thomas Rosales</string>
+				<string>Jr.</string>
+				<string>Inmo Yuon</string>
+				<string>Angelo Tiffe</string>
+				<string>Jason Statham</string>
+			</array>
+			<key>director</key>
+			<string>Michael Mann</string>
+			<key>genres</key>
+			<array>
+				<string>Animation</string>
+			</array>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>description</key>
+			<string>Cab driver Max picks up a man who offers him $600 to drive him around. But the promise of easy money sours when Max realizes his fare is an assassin.</string>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>imageName</key>
+			<string>collateral_ver2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Thank You for Smoking</string>
+			<key>year</key>
+			<integer>2005</integer>
+			<key>length</key>
+			<integer>92</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Aaron Eckhart</string>
+				<string>Maria Bello</string>
+				<string>Cameron Bright</string>
+				<string>Adam Brody</string>
+				<string>Sam Elliott</string>
+				<string>Katie Holmes</string>
+				<string>Rob Lowe</string>
+				<string>William H. Macy</string>
+				<string>Robert Duvall</string>
+				<string>David Koechner</string>
+				<string>J.K. Simmons</string>
+				<string>Kim Dickens</string>
+				<string>Connie Ray</string>
+				<string>Joan Lunden</string>
+				<string>Mary Jo Smith</string>
+				<string>Todd Louiso</string>
+				<string>Jeff Witzke</string>
+				<string>Marianne Muellerleile</string>
+				<string>Jordan Garrett</string>
+				<string>Courtney Taylor Burness</string>
+				<string>Daniel Travis</string>
+				<string>Richard Speight Jr.</string>
+				<string>Renée Graham</string>
+				<string>Timothy Dowling</string>
+				<string>Dennis Miller</string>
+				<string>Terry James</string>
+				<string>Marc Scizak</string>
+				<string>Rachel Thorp</string>
+				<string>Aaron Lustig</string>
+				<string>Melora Hardin</string>
+				<string>Brian Palermo</string>
+				<string>Michael Mantell</string>
+				<string>Spencer Garrett</string>
+				<string>Earl Billings</string>
+				<string>Catherine Reitman</string>
+				<string>Sean Patrick Murphy</string>
+				<string>David O. Sacks</string>
+				<string>Nancy ODell</string>
+				<string>Roy Jenkins</string>
+				<string>Bruce French</string>
+				<string>Christopher Buckley</string>
+				<string>Dana E. Glauberman</string>
+				<string>Eva La Dare</string>
+				<string>Robert Malina</string>
+				<string>Aloma Wright</string>
+			</array>
+			<key>director</key>
+			<string>Jason Reitman</string>
+			<key>genres</key>
+			<array>
+				<string>Comedy</string>
+				<string>Drama</string>
+			</array>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>description</key>
+			<string>The chief spokesperson and lobbyist Nick Naylor is the Vice-President of the Academy of Tobacco Studies. He is talented in speaking and spins argument to defend the cigarette industry in the most difficult situations. His best friends are Polly Bailey that works in the Moderation Council in alcohol business, and Bobby Jay Bliss of the gun business own advisory group SAFETY. They frequently meet each other in a bar and they self-entitle the Mod Squad a.k.a. Merchants of Death, disputing which industry has killed more people. Nick&apos;s greatest enemy is Vermont&apos;s Senator Ortolan Finistirre, who defends in the Senate the use a skull and crossed bones in the cigarette packs. Nick&apos;s son Joey Naylor lives with his mother, and has the chance to know his father in a business trip. When the ambitious reporter Heather Holloway betrays Nick disclosing confidences he had in bed with her, his life turns upside-down. But Nick is good in what he does for the mortgage.</string>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>imageName</key>
+			<string>thank_you_for_smoking_ver2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The Dark Knight</string>
+			<key>year</key>
+			<integer>2008</integer>
+			<key>length</key>
+			<integer>152</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+				<string>普通话</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Tom Cruise</string>
+				<string>Jamie Foxx</string>
+				<string>Jada Pinkett Smith</string>
+				<string>Mark Ruffalo</string>
+				<string>Peter Berg</string>
+				<string>Bruce McGill</string>
+				<string>Irma P. Hall</string>
+				<string>Barry Shabaka Henley</string>
+				<string>Javier Bardem</string>
+				<string>Steven Kozlowski</string>
+				<string>Richard T. Jones</string>
+				<string>James McBride</string>
+				<string>Klea Scott</string>
+				<string>Bodhi Elfman</string>
+				<string>Debi Mazar</string>
+				<string>Emilio Rivera</string>
+				<string>Thomas Rosales</string>
+				<string>Jr.</string>
+				<string>Inmo Yuon</string>
+				<string>Angelo Tiffe</string>
+				<string>Jason Statham</string>
+			</array>
+			<key>director</key>
+			<string>Christopher Nolan</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>Action</string>
+				<string>Crime</string>
+				<string>Thriller</string>
+			</array>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>description</key>
+			<string>Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.</string>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>imageName</key>
+			<string>dark_knight</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The Godfather</string>
+			<key>year</key>
+			<integer>1972</integer>
+			<key>length</key>
+			<integer>175</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+				<string>Latin</string>
+				<string>Italiano</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Marlon Brando</string>
+				<string>Al Pacino</string>
+				<string>James Caan</string>
+				<string>Richard S. Castellano</string>
+				<string>Robert Duvall</string>
+				<string>Sterling Hayden</string>
+				<string>John Marley</string>
+				<string>Richard Conte</string>
+				<string>Al Lettieri</string>
+				<string>Diane Keaton</string>
+				<string>Abe Vigoda</string>
+				<string>Talia Shire</string>
+				<string>Gianni Russo</string>
+				<string>John Cazale</string>
+				<string>Rudy Bond</string>
+				<string>Al Martino</string>
+				<string>Morgana King</string>
+				<string>Lenny Montana</string>
+				<string>John Martino</string>
+				<string>Salvatore Corsitto</string>
+				<string>Alex Rocco</string>
+				<string>Tony Giorgio</string>
+				<string>Victor Rendina</string>
+				<string>Simonetta Stefanelli</string>
+				<string>Saro Urzì</string>
+				<string>Sofia Coppola</string>
+				<string>Louis Guss</string>
+				<string>Gabriele Torrei</string>
+				<string>Tony King</string>
+				<string>Richard Bright</string>
+				<string>Vito Scotti</string>
+				<string>Tere Livrano</string>
+				<string>Julie Gregg</string>
+				<string>Angelo Infanti</string>
+				<string>Corrado Gaipa</string>
+				<string>Franco Citti</string>
+				<string>Max Brandt</string>
+				<string>Carmine Coppola</string>
+				<string>Roman Coppola</string>
+				<string>Don Costello</string>
+				<string>Robert Dahdah</string>
+				<string>Gray Frederickson</string>
+				<string>Ron Gilbert</string>
+				<string>Joe Lo Grippo</string>
+				<string>Sonny Grosso</string>
+				<string>Randy Jurgensen</string>
+				<string>Tony Lip</string>
+				<string>Lou Martini Jr.</string>
+				<string>Raymond Martino</string>
+				<string>Joseph Medaglia</string>
+				<string>Rick Petrucelli</string>
+				<string>Sal Richards</string>
+				<string>Tom Rosqui</string>
+				<string>Frank Sivero</string>
+				<string>Filomena Spagnuolo</string>
+				<string>Joe Spinell</string>
+				<string>Nick Vallelonga</string>
+				<string>Conrad Yama</string>
+			</array>
+			<key>director</key>
+			<string>Francis Ford Coppola</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>Crime</string>
+			</array>
+			<key>rating</key>
+			<integer>5</integer>
+			<key>description</key>
+			<string>Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.</string>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>imageName</key>
+			<string>godfather_ver2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>There&apos;s Something About Mary</string>
+			<key>year</key>
+			<integer>1998</integer>
+			<key>length</key>
+			<integer>119</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Cameron Diaz</string>
+				<string>Ben Stiller</string>
+				<string>Matt Dillon</string>
+				<string>Lee Evans</string>
+				<string>Chris Elliott</string>
+				<string>Lin Shaye</string>
+				<string>Jeffrey Tambor</string>
+				<string>Markie Post</string>
+				<string>Keith David</string>
+				<string>W. Earl Brown</string>
+				<string>Sarah Silverman</string>
+				<string>Brett Favre</string>
+				<string>Khandi Alexander</string>
+				<string>Richard Tyson</string>
+				<string>Rob Moran</string>
+				<string>Willie Garson</string>
+				<string>Richard Jenkins</string>
+				<string>Harland Williams</string>
+				<string>Steve Tyler</string>
+			</array>
+			<key>director</key>
+			<string>Peter Farrelly</string>
+			<key>genres</key>
+			<array>
+				<string>Comedy</string>
+				<string>Romance</string>
+			</array>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>description</key>
+			<string>Having never fully recovered from a prom date that became a total disaster, a man finally gets a chance to reunite with his old prom date, only to run up against other suitors including the sleazy detective he hired to find her.</string>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>imageName</key>
+			<string>theres_something_about_mary_ver3</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The Big Lebowski</string>
+			<key>year</key>
+			<integer>1998</integer>
+			<key>length</key>
+			<integer>117</integer>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+				<string>עִבְרִית</string>
+				<string>Español</string>
+				<string>Deutsch</string>
+			</array>
+			<key>cast</key>
+			<array>
+				<string>Jeff Bridges</string>
+				<string>John Goodman</string>
+				<string>Steve Buscemi</string>
+				<string>Julianne Moore</string>
+				<string>David Huddleston</string>
+				<string>Philip Seymour Hoffman</string>
+				<string>Tara Reid</string>
+				<string>Philip Moon</string>
+				<string>Mark Pellegrino</string>
+				<string>Peter Stormare</string>
+				<string>Flea</string>
+				<string>Torsten Voges</string>
+				<string>Jimmie Dale Gilmore</string>
+				<string>Jack Kehler</string>
+				<string>John Turturro</string>
+				<string>James G. Hoosier</string>
+				<string>Ben Gazzara</string>
+				<string>Sam Elliott</string>
+				<string>David Thewlis</string>
+				<string>Jon Polito</string>
+				<string>Carlos Leon</string>
+				<string>Richard Gant</string>
+				<string>Christian Clemenson</string>
+				<string>Dom Irrera</string>
+				<string>Lu Elrod</string>
+				<string>Mike Gomez</string>
+				<string>Peter Siragusa</string>
+				<string>Marshall Manesh</string>
+				<string>Harry Bugin</string>
+				<string>Irene Olga López</string>
+				<string>Luis Colina</string>
+				<string>Leon Russom</string>
+				<string>Ajgie Kirkland</string>
+				<string>Aimee Mann</string>
+				<string>Jerry Haleva</string>
+				<string>Jennifer Lamb</string>
+				<string>Jesse Flanagan</string>
+				<string>Wendy Braun</string>
+				<string>Asia Carrera</string>
+				<string>Kiva Dawson</string>
+				<string>Anthony J. Sacco</string>
+			</array>
+			<key>director</key>
+			<string>Joel Coen</string>
+			<key>genres</key>
+			<array>
+				<string>Comedy</string>
+				<string>Crime</string>
+			</array>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>description</key>
+			<string>Jeffrey The Dude Lebowski, a Los Angeles slacker who only wants to bowl and drink white Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.</string>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>imageName</key>
+			<string>big_lebowski_ver2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>La La Land</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Comedy</string>
+				<string>Romance</string>
+			</array>
+			<key>description</key>
+			<string>Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>128</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>Damien Chazelle</string>
+			<key>cast</key>
+			<array>
+				<string>Ryan Gosling</string>
+				<string>Emma Stone</string>
+				<string>John Legend</string>
+				<string>Rosemarie DeWitt</string>
+				<string>J.K. Simmons</string>
+			</array>
+			<key>imageName</key>
+			<string>la_la_land_ver3</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Arrival</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>ScienceFiction</string>
+			</array>
+			<key>description</key>
+			<string>Taking place after alien crafts land around the world, an expert linguist is recruited by the military to determine whether they come in peace or are a threat.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>116</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>Denis Villeneuve</string>
+			<key>cast</key>
+			<array>
+				<string>Amy Adams</string>
+				<string>Jeremy Renner</string>
+				<string>Forest Whitaker</string>
+				<string>Michael Stuhlbarg</string>
+				<string>Tzi Ma</string>
+				<string>Mark OBrien</string>
+				<string>Russell Yuen</string>
+				<string>Nathaly Thibault</string>
+				<string>Joe Cobden</string>
+				<string>Julian Casey</string>
+				<string>Pat Kiely</string>
+				<string>Larry Day</string>
+				<string>Mustafa Haidari</string>
+				<string>Abigail Pniowsky</string>
+				<string>Julia Scarlett Dan</string>
+				<string>Philippe Hartmann</string>
+				<string>Andrew Shaver</string>
+				<string>Carmela Nozza Guizzo</string>
+				<string>Anana Rydvald</string>
+				<string>Jadyn Malone</string>
+				<string>Bineyam Girma</string>
+				<string>Shawn Campbell</string>
+				<string>Ruth Chiang</string>
+				<string>Leisa Reid</string>
+				<string>Brittany Teo</string>
+				<string>Chistian Jadah</string>
+				<string>Genevieve Sirois</string>
+				<string>Tammie Sutherland</string>
+				<string>Daniel Esteban</string>
+				<string>Kathleen Stavert</string>
+				<string>Hal Roberts</string>
+				<string>Leslie Baker</string>
+				<string>Michael Nangreaves</string>
+				<string>Karen Belfo</string>
+				<string>Chloë Bellande</string>
+				<string>Robert D. Morais</string>
+				<string>Laurean Adrian Parau</string>
+			</array>
+			<key>imageName</key>
+			<string>arrival_ver2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The Handmaiden</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Thriller</string>
+				<string>Drama</string>
+				<string>Romance</string>
+			</array>
+			<key>description</key>
+			<string>Korea, 1930s. A con man hires a pickpocket to become the maid of a mysterious and fragile heiress, in an attempt to seize her wealth. But the story takes a twist when the lady falls in love with her maid.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>145</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>한국어/조선말</string>
+				<string>日本語</string>
+			</array>
+			<key>director</key>
+			<string>Chan-wook Park</string>
+			<key>cast</key>
+			<array>
+				<string>Kim Min-Hee</string>
+				<string>Kim Tae-Ri</string>
+				<string>Ha Jung-Woo</string>
+				<string>Cho Jin-woong</string>
+				<string>Kim Hae-sook</string>
+				<string>Moon So-ri</string>
+				<string>Lee Dong-Hwi</string>
+				<string>Lee Yong-nyeo</string>
+			</array>
+			<key>imageName</key>
+			<string>ahgassi_ver2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Hunt for the Wilderpeople</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>Adventure</string>
+				<string>Comedy</string>
+			</array>
+			<key>description</key>
+			<string>Ricky is a defiant young city kid who finds himself on the run with his cantankerous foster uncle in the wild New Zealand bush. A national manhunt ensues, and the two are forced to put aside their differences and work together to survive.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>101</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>Taika Waititi</string>
+			<key>cast</key>
+			<array>
+				<string>Sam Neill</string>
+				<string>Julian Dennison</string>
+				<string>Rima Te Wiata</string>
+				<string>Rachel House</string>
+				<string>Rhys Darby</string>
+				<string>Oscar Kightley</string>
+				<string>Tioreore Ngatai-Melbourne</string>
+				<string>Troy Kingi</string>
+				<string>Cohen Holloway</string>
+				<string>Stan Walker</string>
+				<string>Mike Minogue</string>
+				<string>Hamish Parkinson</string>
+				<string>Taika Waititi</string>
+				<string>Yvette Parsons</string>
+				<string>Lloyd Scott</string>
+				<string>Selena Wolfe</string>
+				<string>Mabelle Dennison</string>
+				<string>Sonia Spyve</string>
+				<string>Timothy Herbert</string>
+				<string>Stu Giles</string>
+				<string>Selina Woulfe</string>
+				<string>Tuss</string>
+				<string>Finn</string>
+			</array>
+			<key>imageName</key>
+			<string>hunt_for_the_wilderpeople_ver2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Moana</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Animation</string>
+				<string>Adventure</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+				<string>Music</string>
+			</array>
+			<key>description</key>
+			<string>In Ancient Polynesia, when a terrible curse incurred by Maui reaches an impetuous Chieftain&apos;s daughter&apos;s island, she answers the Ocean&apos;s call to seek out the demigod to set things right.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>103</integer>
+			<key>admissionRating</key>
+			<string>G</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>Don Hall</string>
+			<key>cast</key>
+			<array>
+				<string>Aulii Cravalho</string>
+				<string>Dwayne Johnson</string>
+				<string>Rachel House</string>
+				<string>Temuera Morrison</string>
+				<string>Jemaine Clement</string>
+				<string>Nicole Scherzinger</string>
+				<string>Alan Tudyk</string>
+				<string>Louise Bush</string>
+				<string>Oscar Kightley</string>
+				<string>Troy Polamalu</string>
+				<string>Phillipa Soo</string>
+				<string>Lin-Manuel Miranda</string>
+				<string>Opetaia Foai</string>
+				<string>Chris Jackson</string>
+			</array>
+			<key>imageName</key>
+			<string>moana</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Hell or High Water</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Crime</string>
+				<string>Drama</string>
+			</array>
+			<key>description</key>
+			<string>A divorced dad and his ex-con brother resort to a desperate scheme in order to save their family&apos;s farm in West Texas.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>102</integer>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>David Mackenzie</string>
+			<key>cast</key>
+			<array>
+				<string>Jeff Bridges</string>
+				<string>Chris Pine</string>
+				<string>Ben Foster</string>
+				<string>Gil Birmingham</string>
+				<string>Marin Ireland</string>
+				<string>Katy Mixon</string>
+				<string>Dale Dickey</string>
+				<string>Kevin Rankin</string>
+				<string>Melanie Papalia</string>
+				<string>John-Paul Howard</string>
+				<string>Christopher W. Garcia</string>
+				<string>Margaret Bowman</string>
+				<string>Taylor Sheridan</string>
+				<string>Buck Taylor</string>
+				<string>Amber Midthunder</string>
+				<string>Alma Sisneros</string>
+				<string>Gregory Cruz</string>
+				<string>Debrianna Mansini</string>
+				<string>Dylan Kenin</string>
+				<string>Terry Dale Parks</string>
+				<string>Martin Palmer</string>
+				<string>Lora Martinez-Cunningham</string>
+				<string>Richard Beal</string>
+				<string>J. Nathan Simmons</string>
+				<string>Ricky Lee</string>
+				<string>Crystal Gonzales</string>
+				<string>Howard Ferguson Jr.</string>
+				<string>Danny Winn</string>
+				<string>William Sterchi</string>
+			</array>
+			<key>imageName</key>
+			<string>hell_or_high_water</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Rogue One: A Star Wars Story</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+				<string>ScienceFiction</string>
+				<string>Thriller</string>
+				<string>War</string>
+			</array>
+			<key>description</key>
+			<string>A rogue band of resistance fighters unite for a mission to steal the Death Star plans and bring a new hope to the galaxy.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>133</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>Gareth Edwards</string>
+			<key>cast</key>
+			<array>
+				<string>Felicity Jones</string>
+				<string>Diego Luna</string>
+				<string>Ben Mendelsohn</string>
+				<string>Donnie Yen</string>
+				<string>Mads Mikkelsen</string>
+				<string>Alan Tudyk</string>
+				<string>Riz Ahmed</string>
+				<string>Wen Jiang</string>
+				<string>Forest Whitaker</string>
+				<string>Jimmy Smits</string>
+				<string>Genevieve OReilly</string>
+				<string>Anthony Daniels</string>
+				<string>James Earl Jones</string>
+				<string>Spencer Wilding</string>
+				<string>Daniel Naprous</string>
+				<string>Guy Henry</string>
+				<string>Ingvild Deila</string>
+				<string>Angus MacInnes</string>
+				<string>Drewe Henley</string>
+				<string>David Ankrum</string>
+				<string>Ian McElhinney</string>
+				<string>Michael Smiley</string>
+				<string>Warwick Davis</string>
+				<string>Alistair Petrie</string>
+				<string>Valene Kane</string>
+				<string>Jonathan Aris</string>
+				<string>Fares Fares</string>
+				<string>Sharon Duncan-Brewster</string>
+				<string>Paul Kasey</string>
+				<string>Stephen Stanton</string>
+				<string>Ben Daniels</string>
+				<string>Simon Farnaby</string>
+				<string>Geraldine James</string>
+				<string>Ariyon Bakare</string>
+				<string>Jordan Stephens</string>
+				<string>Nick Kellington</string>
+				<string>Derek Arnold</string>
+				<string>Aidan Cook</string>
+				<string>Ian Whyte</string>
+				<string>Rian Johnson</string>
+				<string>Ram Bergman</string>
+				<string>David Acord</string>
+				<string>Steve Bardrack</string>
+				<string>Verona Blue</string>
+				<string>Steve Blum</string>
+				<string>David Boat</string>
+				<string>Eugene Byrd</string>
+				<string>David Cowgill</string>
+				<string>Jonathan Dixon</string>
+				<string>Michael Donovan</string>
+				<string>Terri Douglas</string>
+				<string>Robin Atkin Downes</string>
+				<string>Dave Filoni</string>
+				<string>Michael Giacchino</string>
+				<string>John Gilroy</string>
+				<string>Tony Gilroy</string>
+				<string>Tom Harrison-Read</string>
+				<string>Kevin Hickman</string>
+				<string>Karen Huie</string>
+				<string>Tom Kane</string>
+				<string>Vanessa Marshall</string>
+				<string>Alexi Melvin</string>
+				<string>Flora Miller</string>
+				<string>William M. Patrick</string>
+				<string>Tom Kane</string>
+				<string>Lex Lang</string>
+				<string>Vanessa Lengies</string>
+				<string>Yuri Lowenthal</string>
+				<string>Jimmy Vee</string>
+				<string>Eunice Olumide</string>
+				<string>Jorge Leon Martinez</string>
+				<string>Russell Balogh</string>
+				<string>Ned Dennehy</string>
+				<string>Steen Young</string>
+				<string>Tyrone Love</string>
+				<string>Attila G. Kerekes</string>
+				<string>Vanessa Marshall</string>
+				<string>Andrew Zographos</string>
+				<string>Angus Cook</string>
+				<string>Sam Hanover</string>
+				<string>Mac Pietowski</string>
+				<string>Emeson Nwolie</string>
+				<string>Duncan Pow</string>
+				<string>Beau Gadsdon</string>
+				<string>Dolly Gadsdon</string>
+				<string>Babou Ceesay</string>
+				<string>Christopher Scarabosio</string>
+				<string>Orly Schuchmacher</string>
+				<string>Katie Sheridan</string>
+				<string>Christian Simpson</string>
+				<string>David Sobolov</string>
+				<string>Julian Stone</string>
+				<string>John S. Schwartz</string>
+				<string>Fred Tatasciore</string>
+				<string>James Arnold Taylor</string>
+				<string>Samuel Witwer</string>
+				<string>Matthew Wood</string>
+			</array>
+			<key>imageName</key>
+			<string>rogue_one_a_star_wars_story_ver3</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sing Street</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Romance</string>
+				<string>Drama</string>
+				<string>Music</string>
+			</array>
+			<key>description</key>
+			<string>A boy growing up in Dublin during the 1980s escapes his strained family life by starting a band to impress the mysterious girl he likes.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>106</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>John Carney</string>
+			<key>cast</key>
+			<array>
+				<string>Ferdia Walsh-Peelo</string>
+				<string>Lucy Boynton</string>
+				<string>Maria Doyle Kennedy</string>
+				<string>Jack Reynor</string>
+				<string>Aidan Gillen</string>
+				<string>Kelly Thornton</string>
+				<string>Mark McKenna</string>
+				<string>Kyle Bradley Donaldson</string>
+				<string>Ben Carolan</string>
+				<string>Percy Chamburuka</string>
+				<string>Conor Hamilton</string>
+				<string>Karl Rice</string>
+				<string>Ian Kenny</string>
+				<string>Don Wycherley</string>
+				<string>Lydia McGuinness</string>
+				<string>Connor Hamilton</string>
+				<string>Pádraig J. Dunne</string>
+				<string>Marcella Plunkett</string>
+				<string>Keith McErlean</string>
+				<string>Eva-Jane Gaffney</string>
+				<string>Des Keogh</string>
+				<string>Kian Murphy</string>
+				<string>Peter Campion</string>
+				<string>Paul Roe</string>
+			</array>
+			<key>imageName</key>
+			<string>sing_street</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Captain Fantastic</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Comedy</string>
+				<string>Drama</string>
+				<string>Family</string>
+				<string>Romance</string>
+			</array>
+			<key>description</key>
+			<string>A father living in the forests of the Pacific Northwest with his six young kids tries to assimilate back into society.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>118</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>Matt Ross</string>
+			<key>cast</key>
+			<array>
+				<string>Viggo Mortensen</string>
+				<string>George MacKay</string>
+				<string>Samantha Isler</string>
+				<string>Annalise Basso</string>
+				<string>Nicholas Hamilton</string>
+				<string>Shree Crooks</string>
+				<string>Frank Langella</string>
+				<string>Kathryn Hahn</string>
+				<string>Missi Pyle</string>
+				<string>Steve Zahn</string>
+				<string>Erin Moriarty</string>
+				<string>Ann Dowd</string>
+				<string>Mike Miller</string>
+				<string>Richard Beal</string>
+				<string>Alan Humphreys</string>
+				<string>Elena Stecca</string>
+				<string>Charlie Shotwell</string>
+				<string>Trin Miller</string>
+				<string>Elijah Stevenson</string>
+				<string>Teddy Van Ee</string>
+				<string>Hannah Horton</string>
+				<string>Galen Osier</string>
+				<string>Thomas Brophy</string>
+				<string>Louis Hobson</string>
+				<string>Hafid Abdelmoula</string>
+				<string>Paul Alan Amend</string>
+				<string>Yolanda Aragon</string>
+				<string>Angela Francia</string>
+				<string>Cliff Gravel</string>
+			</array>
+			<key>imageName</key>
+			<string>captain_fantastic</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Fantastic Beasts and Where to Find Them</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>description</key>
+			<string>In 1926, Newt Scamander arrives at the Magical Congress of the United States of America with a magically expanded briefcase, which houses a number of dangerous creatures and their habitats. When the creatures escape from the briefcase, it sends the American wizarding authorities after Newt, and threatens to strain even further the state of magical and non-magical relations.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>133</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>David Yates</string>
+			<key>cast</key>
+			<array>
+				<string>Eddie Redmayne</string>
+				<string>Colin Farrell</string>
+				<string>Katherine Waterston</string>
+				<string>Dan Fogler</string>
+				<string>Alison Sudol</string>
+				<string>Ezra Miller</string>
+				<string>Samantha Morton</string>
+				<string>Carmen Ejogo</string>
+				<string>Jon Voight</string>
+				<string>Ron Perlman</string>
+				<string>Josh Cowdery</string>
+				<string>Ronan Raftery</string>
+				<string>Faith Wood-Blagrove</string>
+				<string>Jenn Murray</string>
+				<string>Johnny Depp</string>
+				<string>Zoë Kravitz</string>
+				<string>Gemma Chan</string>
+				<string>Peter Breitmayer</string>
+				<string>Kevin Guthrie</string>
+				<string>Kamil Lemieszewski</string>
+				<string>Fanny Carbonnel</string>
+				<string>Sean Cronin</string>
+				<string>Christine Marzano</string>
+				<string>Lasco Atkins</string>
+				<string>Lucie Pohl</string>
+				<string>Joelle Koissi</string>
+				<string>Flor Ferraco</string>
+				<string>Dino Fazzani</string>
+				<string>Jason Newell</string>
+				<string>Jorge Leon Martinez</string>
+				<string>Cristian Lazar</string>
+				<string>Lobna Futers</string>
+				<string>Karl Farrer</string>
+				<string>Abi Adeyemi</string>
+				<string>Sam Redford</string>
+				<string>Akin Gazi</string>
+				<string>Solomon Taiwo Justified</string>
+				<string>Todd Boyce</string>
+				<string>Chloe de Burgh</string>
+				<string>Andrei Satalov</string>
+				<string>Tim Bentinck</string>
+				<string>Edd Osmond</string>
+				<string>Bart Edwards</string>
+				<string>Matthew Sim</string>
+				<string>Miroslav Zaruba</string>
+				<string>Elizabeth Moynihan</string>
+				<string>Gjevat Kelmendi</string>
+				<string>Jason Redshaw</string>
+				<string>BF Mulvey</string>
+				<string>Adam Lazarus</string>
+				<string>Anthony J. Sacco</string>
+				<string>Kirsty Grace</string>
+				<string>Ashley Hudson</string>
+				<string>Anne Wittman</string>
+				<string>Daniel Smales</string>
+				<string>Anick Wiget</string>
+				<string>Lee Asquith-Coe</string>
+				<string>Bernardo Santos</string>
+				<string>Andreea Paduraru</string>
+				<string>Gino Picciano</string>
+			</array>
+			<key>imageName</key>
+			<string>fantastic_beasts_and_where_to_find_them_ver3</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Me Before You</string>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>genres</key>
+			<array>
+				<string>Romance</string>
+				<string>Drama</string>
+			</array>
+			<key>description</key>
+			<string>A small town girl is caught between dead-end jobs. A high-profile, successful man becomes wheelchair bound following an accident. The man decides his life is not worth living until the girl is hired for six months to be his new caretaker. Worlds apart and trapped together by circumstance, the two get off to a rocky start. But the girl becomes determined to prove to the man that life is worth living and as they embark on a series of adventures together, each finds their world changing in ways neither of them could begin to imagine.</string>
+			<key>year</key>
+			<integer>2016</integer>
+			<key>length</key>
+			<integer>110</integer>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>director</key>
+			<string>Thea Sharrock</string>
+			<key>cast</key>
+			<array>
+				<string>Emilia Clarke</string>
+				<string>Sam Claflin</string>
+				<string>Janet McTeer</string>
+				<string>Vanessa Kirby</string>
+				<string>Matthew Lewis</string>
+				<string>Jenna Coleman</string>
+				<string>Charles Dance</string>
+				<string>Brendan Coyle</string>
+				<string>Steve Peacocke</string>
+				<string>Samantha Spiro</string>
+				<string>Ben Lloyd-Hughes</string>
+				<string>Lily Travers</string>
+				<string>Alan Breck</string>
+				<string>Eileen Dunwoodie</string>
+				<string>Pablo Raybould</string>
+				<string>Gabrielle Downey</string>
+				<string>Henri Charles</string>
+				<string>Muzz Khan</string>
+				<string>Richard Goulding</string>
+				<string>Diane Morgan</string>
+				<string>Stephen Chance</string>
+				<string>Joanna Lumley</string>
+				<string>Sharon Cherry Ballard</string>
+				<string>Chuku Modu</string>
+				<string>Verity Marshall</string>
+				<string>Manuel Severi</string>
+			</array>
+			<key>imageName</key>
+			<string>me_before_you</string>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Orlando Bloom</string>
+				<string>Jack Davenport</string>
+			</array>
+			<key>description</key>
+			<string>Captain Barbossa Will Turner and Elizabeth Swann must sail off the edge of the map navigate treachery and betrayal find Jack Sparrow and make their final alliances for one last decisive battle.</string>
+			<key>director</key>
+			<string>Gore Verbinski</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Pirates of the Caribbean At World&apos;s End</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>169</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Pirates of the Caribbean: At World&apos;s End</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Christoph Waltz</string>
+				<string>Rory Kinnear</string>
+				<string>Stephanie Sigman</string>
+			</array>
+			<key>description</key>
+			<string>A cryptic message from Bonds past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.</string>
+			<key>director</key>
+			<string>Sam Mendes</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Spectre</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>148</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Spectre</string>
+			<key>year</key>
+			<integer>2015</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Tom Hardy</string>
+				<string>Christian Bale</string>
+				<string>Joseph Gordon-Levitt</string>
+			</array>
+			<key>description</key>
+			<string>Eight years after the Jokers reign of anarchy the Dark Knight with the help of the enigmatic Selina is forced from his imposed exile to save Gotham City now on the edge of total annihilation from the brutal guerrilla terrorist Bane.</string>
+			<key>director</key>
+			<string>Christopher Nolan</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>The Dark Knight Rises</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>164</integer>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>title</key>
+			<string>The Dark Knight Rises</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>J.K. Simmons</string>
+				<string>James Franco</string>
+				<string>Kirsten Dunst</string>
+			</array>
+			<key>description</key>
+			<string>A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains temptations and revenge.</string>
+			<key>director</key>
+			<string>Sam Raimi</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>Spider-Man 3</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>156</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Spider-Man 3</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Brad Garrett</string>
+				<string>Donna Murphy</string>
+				<string>M.C. Gainey</string>
+			</array>
+			<key>description</key>
+			<string>The magically longhaired Rapunzel has spent her entire life in a tower but now that a runaway thief has stumbled upon her she is about to discover the world for the first time and who she really is.</string>
+			<key>director</key>
+			<string>Nathan Greno</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+				<string>Musical</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>Tangled</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>100</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Tangled</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Alan Rickman</string>
+				<string>Daniel Radcliffe</string>
+				<string>Rupert Grint</string>
+			</array>
+			<key>description</key>
+			<string>As Harry Potter begins his sixth year at Hogwarts he discovers an old book marked as the property of the HalfBlood Prince and begins to learn more about Lord Voldemorts dark past.</string>
+			<key>director</key>
+			<string>David Yates</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+				<string>Mystery</string>
+			</array>
+			<key>imageName</key>
+			<string>Harry Potter and the Half-Blood Prince</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>153</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Harry Potter and the Half-Blood Prince</string>
+			<key>year</key>
+			<integer>2009</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Giancarlo Giannini</string>
+				<string>Mathieu Amalric</string>
+				<string>Rory Kinnear</string>
+			</array>
+			<key>description</key>
+			<string>James Bond descends into mystery as he tries to stop a mysterious organization from eliminating a countrys most valuable resource. All the while he still tries to seek revenge over the death of his love.</string>
+			<key>director</key>
+			<string>Marc Forster</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+			</array>
+			<key>imageName</key>
+			<string>Quantum of Solace</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>106</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Quantum of Solace</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Orlando Bloom</string>
+				<string>Jack Davenport</string>
+			</array>
+			<key>description</key>
+			<string>Jack Sparrow races to recover the heart of Davy Jones to avoid enslaving his soul to Jones service as other friends and foes seek the heart for their own agenda as well.</string>
+			<key>director</key>
+			<string>Gore Verbinski</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Pirates of the Caribbean Dead Man&apos;s Chest</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>151</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Pirates of the Caribbean: Dead Man&apos;s Chest</string>
+			<key>year</key>
+			<integer>2006</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Ruth Wilson</string>
+				<string>Tom Wilkinson</string>
+			</array>
+			<key>description</key>
+			<string>Native American warrior Tonto recounts the untold tales that transformed John Reid a man of the law into a legend of justice.</string>
+			<key>director</key>
+			<string>Gore Verbinski</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Western</string>
+			</array>
+			<key>imageName</key>
+			<string>The Lone Ranger</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>150</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Lone Ranger</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Peter Dinklage</string>
+				<string>Pierfrancesco Favino</string>
+				<string>Damián Alcázar</string>
+			</array>
+			<key>description</key>
+			<string>The Pevensie siblings return to Narnia where they are enlisted to once again help ward off an evil king and restore the rightful heir to the lands throne Prince Caspian.</string>
+			<key>director</key>
+			<string>Andrew Adamson</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Chronicles of Narnia Prince Caspian</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>150</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Chronicles of Narnia: Prince Caspian</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Sam Claflin</string>
+				<string>Stephen Graham</string>
+			</array>
+			<key>description</key>
+			<string>Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth only to discover that Blackbeard and his daughter are after it too.</string>
+			<key>director</key>
+			<string>Rob Marshall</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Pirates of the Caribbean On Stranger Tides</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>136</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Pirates of the Caribbean: On Stranger Tides</string>
+			<key>year</key>
+			<integer>2011</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Aidan Turner</string>
+				<string>Adam Brown</string>
+				<string>James Nesbitt</string>
+			</array>
+			<key>description</key>
+			<string>Bilbo and Company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.</string>
+			<key>director</key>
+			<string>Peter Jackson</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Hobbit The Battle of the Five Armies</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>164</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>The Hobbit: The Battle of the Five Armies</string>
+			<key>year</key>
+			<integer>2014</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Emma Stone</string>
+				<string>Andrew Garfield</string>
+				<string>Chris Zylka</string>
+			</array>
+			<key>description</key>
+			<string>After Peter Parker is bitten by a genetically altered spider he gains newfound spiderlike powers and ventures out to solve the mystery of his parents mysterious death.</string>
+			<key>director</key>
+			<string>Marc Webb</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Amazing Spider-Man</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>153</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Amazing Spider-Man</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Mark Addy</string>
+				<string>William Hurt</string>
+				<string>Scott Grimes</string>
+			</array>
+			<key>description</key>
+			<string>In 12th century England Robin and his band of marauders confront corruption in a local village and lead an uprising against the crown that will forever alter the balance of world power.</string>
+			<key>director</key>
+			<string>Ridley Scott</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>History</string>
+			</array>
+			<key>imageName</key>
+			<string>Robin Hood</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>156</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Robin Hood</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Aidan Turner</string>
+				<string>Adam Brown</string>
+				<string>James Nesbitt</string>
+			</array>
+			<key>description</key>
+			<string>The dwarves along with Bilbo Baggins and Gandalf the Grey continue their quest to reclaim Erebor their homeland from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.</string>
+			<key>director</key>
+			<string>Peter Jackson</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Hobbit The Desolation of Smaug</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>186</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>The Hobbit: The Desolation of Smaug</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Christopher Lee</string>
+				<string>Eva Green</string>
+				<string>Kristin Scott Thomas</string>
+			</array>
+			<key>description</key>
+			<string>In a parallel universe young Lyra Belacqua journeys to the far North to save her best friend and other kidnapped children from terrible experiments by a mysterious organization.</string>
+			<key>director</key>
+			<string>Chris Weitz</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Golden Compass</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>113</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>The Golden Compass</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Naomi Watts</string>
+				<string>Thomas Kretschmann</string>
+				<string>Evan Parke</string>
+			</array>
+			<key>description</key>
+			<string>After a movie crew travel to a mysterious island to shoot their picture they encounter a giant and furious gorilla who takes their leading actress and form a special relationship with her protecting the beautiful lady at all costs.</string>
+			<key>director</key>
+			<string>Peter Jackson</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>King Kong</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>201</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>King Kong</string>
+			<key>year</key>
+			<integer>2005</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Leonardo DiCaprio</string>
+				<string>Kate Winslet</string>
+				<string>Gloria Stuart</string>
+			</array>
+			<key>description</key>
+			<string>A seventeenyearold aristocrat falls in love with a kind but poor artist aboard the luxurious illfated R.M.S. Titanic.</string>
+			<key>director</key>
+			<string>James Cameron</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>Titanic</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>194</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Titanic</string>
+			<key>year</key>
+			<integer>1997</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Albert Finney</string>
+				<string>Helen McCrory</string>
+				<string>Rory Kinnear</string>
+			</array>
+			<key>description</key>
+			<string>Bonds loyalty to M is tested when her past comes back to haunt her. Whilst MI6 comes under attack 007 must track down and destroy the threat no matter how personal the cost.</string>
+			<key>director</key>
+			<string>Sam Mendes</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Skyfall</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>143</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Skyfall</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>J.K. Simmons</string>
+				<string>James Franco</string>
+				<string>Kirsten Dunst</string>
+			</array>
+			<key>description</key>
+			<string>Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius.</string>
+			<key>director</key>
+			<string>Sam Raimi</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>Spider-Man 2</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>135</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Spider-Man 2</string>
+			<key>year</key>
+			<integer>2004</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Alan Rickman</string>
+				<string>Anne Hathaway</string>
+			</array>
+			<key>description</key>
+			<string>Nineteenyearold Alice returns to the magical world from her childhood adventure where she reunites with her old friends and learns of her true destiny to end the Red Queens reign of terror.</string>
+			<key>director</key>
+			<string>Tim Burton</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Alice in Wonderland</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>108</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Alice in Wonderland</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>G</string>
+			<key>cast</key>
+			<array>
+				<string>Steve Buscemi</string>
+				<string>Tyler Labine</string>
+				<string>Sean Hayes</string>
+			</array>
+			<key>description</key>
+			<string>A look at the relationship between Mike and Sulley during their days at Monsters University  when they werent necessarily the best of friends.</string>
+			<key>director</key>
+			<string>Dan Scanlon</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Monsters University</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>104</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Monsters University</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Tim Holmes</string>
+				<string>Mila Kunis</string>
+				<string>James Franco</string>
+			</array>
+			<key>description</key>
+			<string>A frustrated circus magician from Kansas is transported to a magical land called Oz where he will have to fulfill a prophecy to become the king and release the land from the Wicked Witches using his great but fake powers.</string>
+			<key>director</key>
+			<string>Sam Raimi</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Oz the Great and Powerful</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>130</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Oz the Great and Powerful</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>G</string>
+			<key>cast</key>
+			<array>
+				<string>Tom Hanks</string>
+				<string>John Ratzenberger</string>
+				<string>Don Rickles</string>
+			</array>
+			<key>description</key>
+			<string>The toys are mistakenly delivered to a daycare center instead of the attic right before Andy leaves for college and its up to Woody to convince the other toys that they werent abandoned and to return home.</string>
+			<key>director</key>
+			<string>Lee Unkrich</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Toy Story 3</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>103</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Toy Story 3</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Jason Statham</string>
+				<string>Paul Walker</string>
+				<string>Vin Diesel</string>
+			</array>
+			<key>description</key>
+			<string>Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose brother.</string>
+			<key>director</key>
+			<string>James Wan</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Crime</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Furious 7</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>140</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Furious 7</string>
+			<key>year</key>
+			<integer>2015</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Eddie Marsan</string>
+				<string>Ewen Bremner</string>
+				<string>Ralph Brown</string>
+			</array>
+			<key>description</key>
+			<string>The ancient war between humans and a race of giants is reignited when Jack a young farmhand fighting for a kingdom and the love of a princess opens a gateway between the two worlds.</string>
+			<key>director</key>
+			<string>Bryan Singer</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Jack the Giant Slayer</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>114</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Jack the Giant Slayer</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Leonardo DiCaprio</string>
+				<string>Elizabeth Debicki</string>
+				<string>Steve Bisley</string>
+			</array>
+			<key>description</key>
+			<string>A writer and wall street trader Nick finds himself drawn to the past and lifestyle of his millionaire neighbor Jay Gatsby.</string>
+			<key>director</key>
+			<string>Baz Luhrmann</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>The Great Gatsby</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>143</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Great Gatsby</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Jake Gyllenhaal</string>
+				<string>Richard Coyle</string>
+				<string>Reece Ritchie</string>
+			</array>
+			<key>description</key>
+			<string>A young fugitive prince and princess must stop a villain who unknowingly threatens to destroy the world with a special dagger that enables the magic sand inside to reverse time.</string>
+			<key>director</key>
+			<string>Mike Newell</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>Prince of Persia The Sands of Time</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>116</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Prince of Persia: The Sands of Time</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Harrison Ford</string>
+				<string>Ray Winstone</string>
+				<string>Jim Broadbent</string>
+			</array>
+			<key>description</key>
+			<string>Famed archaeologistadventurer Dr. Henry Indiana Jones is called back into action when he becomes entangled in a Soviet plot to uncover the secret behind mysterious artifacts known as the Crystal Skulls.</string>
+			<key>director</key>
+			<string>Steven Spielberg</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Indiana Jones and the Kingdom of the Crystal Skull</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>122</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Indiana Jones and the Kingdom of the Crystal Skull</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Kelly Macdonald</string>
+				<string>John Ratzenberger</string>
+				<string>Julie Walters</string>
+			</array>
+			<key>description</key>
+			<string>Determined to make her own path in life Princess Merida defies a custom that brings chaos to her kingdom. Granted one wish Merida must rely on her bravery and her archery skills to undo a beastly curse.</string>
+			<key>director</key>
+			<string>Mark Andrews</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Brave</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>93</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Brave</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Tzi Ma</string>
+				<string>Dana Ivey</string>
+				<string>Noémie Lenoir</string>
+			</array>
+			<key>description</key>
+			<string>After an attempted assassination on Ambassador Han Lee and Carter head to Paris to protect a French woman with knowledge of the Triads secret leaders.</string>
+			<key>director</key>
+			<string>Brett Ratner</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Comedy</string>
+				<string>Crime</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Rush Hour 3</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>91</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Rush Hour 3</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Robin Wright</string>
+				<string>Colin Firth</string>
+				<string>Gary Oldman</string>
+			</array>
+			<key>description</key>
+			<string>An animated retelling of Charles Dickens classic novel about a Victorianera miser taken on a journey of selfredemption courtesy of several mysterious Christmas apparitions.</string>
+			<key>director</key>
+			<string>Robert Zemeckis</string>
+			<key>genres</key>
+			<array>
+				<string>Animation</string>
+				<string>Drama</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>A Christmas Carol</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>96</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>A Christmas Carol</string>
+			<key>year</key>
+			<integer>2009</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Christoph Waltz</string>
+				<string>Alexander Skarsgård</string>
+				<string>Casper Crump</string>
+			</array>
+			<key>description</key>
+			<string>Tarzan having acclimated to life in London is called back to his former home in the jungle to investigate the activities at a mining encampment.</string>
+			<key>director</key>
+			<string>David Yates</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>The Legend of Tarzan</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>110</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Legend of Tarzan</string>
+			<key>year</key>
+			<integer>2016</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Jim Broadbent</string>
+				<string>Kiran Shah</string>
+				<string>Shane Rangi</string>
+			</array>
+			<key>description</key>
+			<string>Four kids travel through a wardrobe to the land of Narnia and learn of their destiny to free it with the guidance of a mystical lion.</string>
+			<key>director</key>
+			<string>Andrew Adamson</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Chronicles of Narnia The Lion, the Witch and the Wardrobe</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>150</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</string>
+			<key>year</key>
+			<integer>2005</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Christian Bale</string>
+				<string>Heath Ledger</string>
+				<string>Morgan Freeman</string>
+			</array>
+			<key>description</key>
+			<string>When the menace known as the Joker wreaks havoc and chaos on the people of Gotham the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.</string>
+			<key>director</key>
+			<string>Christopher Nolan</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Crime</string>
+				<string>Drama</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>The Dark Knight</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>152</integer>
+			<key>rating</key>
+			<real>4.5</real>
+			<key>title</key>
+			<string>The Dark Knight</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>John Ratzenberger</string>
+				<string>Delroy Lindo</string>
+				<string>Jess Harnell</string>
+			</array>
+			<key>description</key>
+			<string>Seventyeight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons inadvertently taking a young stowaway.</string>
+			<key>director</key>
+			<string>Pete Docter</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Up</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>96</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Up</string>
+			<key>year</key>
+			<integer>2009</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Chloë Grace Moretz</string>
+				<string>Christopher Lee</string>
+				<string>Ray Winstone</string>
+			</array>
+			<key>description</key>
+			<string>In Paris in 1931 an orphan named Hugo Cabret who lives in the walls of a train station is wrapped up in a mystery involving his late father and an automaton.</string>
+			<key>director</key>
+			<string>Martin Scorsese</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Family</string>
+				<string>Mystery</string>
+			</array>
+			<key>imageName</key>
+			<string>Hugo</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>126</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Hugo</string>
+			<key>year</key>
+			<integer>2011</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Jet Li</string>
+				<string>Brendan Fraser</string>
+				<string>Russell Wong</string>
+			</array>
+			<key>description</key>
+			<string>In the Far East Alex OConnell the son of famed mummy fighters Rick and Evy OConnell unearths the mummy of the first Emperor of Qin  a shapeshifting entity cursed by a witch centuries ago.</string>
+			<key>director</key>
+			<string>Rob Cohen</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+				<string>Horror</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>The Mummy Tomb of the Dragon Emperor</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>112</integer>
+			<key>rating</key>
+			<real>2.5</real>
+			<key>title</key>
+			<string>The Mummy: Tomb of the Dragon Emperor</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Jimmy Bennett</string>
+				<string>Morgan Freeman</string>
+				<string>Steve Carell</string>
+			</array>
+			<key>description</key>
+			<string>God contacts Congressman Evan Baxter and tells him to build an ark in preparation for a great flood.</string>
+			<key>director</key>
+			<string>Tom Shadyac</string>
+			<key>genres</key>
+			<array>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Evan Almighty</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>96</integer>
+			<key>rating</key>
+			<real>2.5</real>
+			<key>title</key>
+			<string>Evan Almighty</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Amy Poehler</string>
+				<string>Mindy Kaling</string>
+				<string>Phyllis Smith</string>
+			</array>
+			<key>description</key>
+			<string>After young Riley is uprooted from her Midwest life and moved to San Francisco her emotions  Joy Fear Anger Disgust and Sadness  conflict on how best to navigate a new city house and school.</string>
+			<key>director</key>
+			<string>Pete Docter</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Drama</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Inside Out</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>95</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Inside Out</string>
+			<key>year</key>
+			<integer>2015</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Scarlett Johansson</string>
+				<string>Bill Murray</string>
+				<string>Garry Shandling</string>
+			</array>
+			<key>description</key>
+			<string>After a threat from the tiger Shere Khan forces him to flee the jungle a mancub named Mowgli embarks on a journey of self discovery with the help of panther Bagheera and free spirited bear Baloo.</string>
+			<key>director</key>
+			<string>Jon Favreau</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Jungle Book</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>106</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>The Jungle Book</string>
+			<key>year</key>
+			<integer>2016</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Chris Hemsworth</string>
+				<string>Kristen Stewart</string>
+				<string>Sam Claflin</string>
+			</array>
+			<key>description</key>
+			<string>In a twist to the fairy tale the Huntsman ordered to take Snow White into the woods to be killed winds up becoming her protector and mentor in a quest to vanquish the Evil Queen.</string>
+			<key>director</key>
+			<string>Rupert Sanders</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Snow White and the Huntsman</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>132</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Snow White and the Huntsman</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Angelina Jolie Pitt</string>
+				<string>Sharlto Copley</string>
+				<string>Sam Riley</string>
+			</array>
+			<key>description</key>
+			<string>A vengeful fairy is driven to curse an infant princess only to discover that the child may be the one person who can restore peace to their troubled land.</string>
+			<key>director</key>
+			<string>Robert Stromberg</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>Maleficent</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>97</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Maleficent</string>
+			<key>year</key>
+			<integer>2014</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Keanu Reeves</string>
+				<string>Cary-Hiroyuki Tagawa</string>
+				<string>Jin Akanishi</string>
+			</array>
+			<key>description</key>
+			<string>A band of samurai set out to avenge the death and dishonor of their master at the hands of a ruthless shogun.</string>
+			<key>director</key>
+			<string>Carl Rinsch</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>47 Ronin</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>128</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>47 Ronin</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Jon Hamm</string>
+				<string>Kathy Griffin</string>
+				<string>Mary Kay Place</string>
+			</array>
+			<key>description</key>
+			<string>Rumpelstiltskin tricks a midlife crisis burdened Shrek into allowing himself to be erased from existence and cast in a dark alternate timeline where Rumpel rules supreme.</string>
+			<key>director</key>
+			<string>Mike Mitchell</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Shrek Forever After</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>93</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Shrek Forever After</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>G</string>
+			<key>cast</key>
+			<array>
+				<string>Tom Hanks</string>
+				<string>Eddie Deezen</string>
+				<string>Peter Scolari</string>
+			</array>
+			<key>description</key>
+			<string>A young boy embarks on a magical adventure to the North Pole on the Polar Express. During his adventure he learns about friendship bravery and the spirit of Christmas.</string>
+			<key>director</key>
+			<string>Robert Zemeckis</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Polar Express</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>100</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Polar Express</string>
+			<key>year</key>
+			<integer>2004</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Gerard Butler</string>
+				<string>America Ferrera</string>
+				<string>Craig Ferguson</string>
+			</array>
+			<key>description</key>
+			<string>A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself and learns there may be more to the creatures than he assumed.</string>
+			<key>director</key>
+			<string>Dean DeBlois</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>How to Train Your Dragon</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>98</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>How to Train Your Dragon</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Paul Walker</string>
+				<string>Vin Diesel</string>
+				<string>Jordana Brewster</string>
+			</array>
+			<key>description</key>
+			<string>Los Angeles police officer Brian OConnor must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.</string>
+			<key>director</key>
+			<string>Rob Cohen</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Crime</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>The Fast and the Furious</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>106</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Fast and the Furious</string>
+			<key>year</key>
+			<integer>2001</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Brad Pitt</string>
+				<string>Jason Flemyng</string>
+				<string>Julia Ormond</string>
+			</array>
+			<key>description</key>
+			<string>Tells the story of Benjamin Button a man who starts aging backwards with bizarre consequences.</string>
+			<key>director</key>
+			<string>David Fincher</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>Fantasy</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>The Curious Case of Benjamin Button</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>166</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>The Curious Case of Benjamin Button</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Nicolas Cage</string>
+				<string>Omar Benson Miller</string>
+				<string>Robert Capron</string>
+			</array>
+			<key>description</key>
+			<string>Master sorcerer Balthazar Blake must find and train Merlins descendant to defeat dark sorceress Morgana la Fe.</string>
+			<key>director</key>
+			<string>Jon Turteltaub</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Sorcerer&apos;s Apprentice</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>109</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>The Sorcerer&apos;s Apprentice</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Jimmy Bennett</string>
+				<string>Mike Vogel</string>
+				<string>Andre Braugher</string>
+			</array>
+			<key>description</key>
+			<string>On New Years Eve the luxury ocean liner Poseidon capsizes after being swamped by a rogue wave. The survivors are left to fight for their lives as they attempt to escape the sinking ship.</string>
+			<key>director</key>
+			<string>Wolfgang Petersen</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Poseidon</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>98</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Poseidon</string>
+			<key>year</key>
+			<integer>2006</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Alan Rickman</string>
+				<string>Anne Hathaway</string>
+			</array>
+			<key>description</key>
+			<string>Alice returns to the whimsical world of Wonderland and travels back in time to help the Mad Hatter.</string>
+			<key>director</key>
+			<string>James Bobin</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Alice Through the Looking Glass</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>113</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Alice Through the Looking Glass</string>
+			<key>year</key>
+			<integer>2016</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Justin Timberlake</string>
+				<string>Eric Idle</string>
+				<string>Rupert Everett</string>
+			</array>
+			<key>description</key>
+			<string>When his new fatherinlaw King Harold falls ill Shrek is looked at as the heir to the land of Far Far Away. Not one to give up his beloved swamp Shrek recruits his friends Donkey and Puss in Boots to install the rebellious Artie as the new king. Princess Fiona however rallies a band of royal girlfriends to fend off a coup detat by the jilted Prince Charming.</string>
+			<key>director</key>
+			<string>Chris Miller</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Shrek the Third</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>93</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Shrek the Third</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Dominic Cooper</string>
+				<string>Callum Rennie</string>
+				<string>Ruth Negga</string>
+			</array>
+			<key>description</key>
+			<string>As an Orc horde invades the planet Azeroth using a magic portal a few human heroes and dissenting Orcs must attempt to stop the true evil behind this war.</string>
+			<key>director</key>
+			<string>Duncan Jones</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Warcraft</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>123</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Warcraft</string>
+			<key>year</key>
+			<integer>2016</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Bruce Spence</string>
+				<string>Shane Rangi</string>
+				<string>Laura Brent</string>
+			</array>
+			<key>description</key>
+			<string>Lucy and Edmund Pevensie return to Narnia with their cousin Eustace where they meet up with Prince Caspian for a trip across the sea aboard the royal ship The Dawn Treader. Along the way they encounter dragons dwarves merfolk and a band of lost warriors before reaching the edge of the world.</string>
+			<key>director</key>
+			<string>Michael Apted</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Chronicles of Narnia The Voyage of the Dawn Treader</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>113</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>The Chronicles of Narnia: The Voyage of the Dawn Treader</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Jennifer Garner</string>
+				<string>Jaime King</string>
+				<string>Mako</string>
+			</array>
+			<key>description</key>
+			<string>A tale of war and romance mixed in with history. The story follows two lifelong friends and a beautiful nurse who are caught up in the in the horror of an infamous Sunday morning in 1941.</string>
+			<key>director</key>
+			<string>Michael Bay</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Drama</string>
+				<string>History</string>
+				<string>Romance</string>
+				<string>War</string>
+			</array>
+			<key>imageName</key>
+			<string>Pearl Harbor</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>184</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Pearl Harbor</string>
+			<key>year</key>
+			<integer>2001</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Robert Pattinson</string>
+				<string>Daniel Radcliffe</string>
+				<string>Fiona Shaw</string>
+			</array>
+			<key>description</key>
+			<string>With their warning about Lord Voldemorts return scoffed at Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.</string>
+			<key>director</key>
+			<string>David Yates</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+				<string>Mystery</string>
+			</array>
+			<key>imageName</key>
+			<string>Harry Potter and the Order of the Phoenix</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>138</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Harry Potter and the Order of the Phoenix</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Robert Pattinson</string>
+				<string>Daniel Radcliffe</string>
+				<string>Rupert Grint</string>
+			</array>
+			<key>description</key>
+			<string>Harry finds himself mysteriously selected as an underaged competitor in a dangerous tournament between three schools of magic.</string>
+			<key>director</key>
+			<string>Mike Newell</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+				<string>Mystery</string>
+			</array>
+			<key>imageName</key>
+			<string>Harry Potter and the Goblet of Fire</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>157</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Harry Potter and the Goblet of Fire</string>
+			<key>year</key>
+			<integer>2005</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Will Smith</string>
+				<string>Charlize Theron</string>
+				<string>Eddie Marsan</string>
+			</array>
+			<key>description</key>
+			<string>Hancock is a superhero whose ill considered behavior regularly causes damage in the millions. He changes when one person he saves helps him improve his public image.</string>
+			<key>director</key>
+			<string>Peter Berg</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Drama</string>
+			</array>
+			<key>imageName</key>
+			<string>Hancock</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>102</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Hancock</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Christopher Lee</string>
+				<string>David Kelly</string>
+			</array>
+			<key>description</key>
+			<string>A young boy wins a tour through the most magnificent chocolate factory in the world led by the worlds most unusual candy maker.</string>
+			<key>director</key>
+			<string>Tim Burton</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Charlie and the Chocolate Factory</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>115</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Charlie and the Chocolate Factory</string>
+			<key>year</key>
+			<integer>2005</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>G</string>
+			<key>cast</key>
+			<array>
+				<string>Janeane Garofalo</string>
+				<string>John Ratzenberger</string>
+				<string>Brian Dennehy</string>
+			</array>
+			<key>description</key>
+			<string>A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.</string>
+			<key>director</key>
+			<string>Brad Bird</string>
+			<key>genres</key>
+			<array>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Ratatouille</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>111</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Ratatouille</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Christian Bale</string>
+				<string>Liam Neeson</string>
+				<string>Morgan Freeman</string>
+			</array>
+			<key>description</key>
+			<string>After training with his mentor Batman begins his fight to free crimeridden Gotham City from the corruption that Scarecrow and the League of Shadows have cast upon it.</string>
+			<key>director</key>
+			<string>Christopher Nolan</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+			</array>
+			<key>imageName</key>
+			<string>Batman Begins</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>128</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Batman Begins</string>
+			<key>year</key>
+			<integer>2005</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Bernie Mac</string>
+				<string>Jada Pinkett Smith</string>
+				<string>Cedric the Entertainer</string>
+			</array>
+			<key>description</key>
+			<string>The animals try to fly back to New York City but crashland on an African wildlife refuge where Alex is reunited with his parents.</string>
+			<key>director</key>
+			<string>Eric Darnell</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Madagascar Escape 2 Africa</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>89</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Madagascar: Escape 2 Africa</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Robin Williams</string>
+				<string>Rami Malek</string>
+				<string>Steve Coogan</string>
+			</array>
+			<key>description</key>
+			<string>Security guard Larry Daley infiltrates the Smithsonian Institution in order to rescue Jedediah and Octavius who have been shipped to the museum by mistake.</string>
+			<key>director</key>
+			<string>Shawn Levy</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Night at the Museum Battle of the Smithsonian</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>105</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Night at the Museum: Battle of the Smithsonian</string>
+			<key>year</key>
+			<integer>2009</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Josh Gad</string>
+				<string>Maurice LaMarche</string>
+				<string>Livvy Stubenrauch</string>
+			</array>
+			<key>description</key>
+			<string>When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter her sister Anna teams up with a mountain man his playful reindeer and a snowman to change the weather condition.</string>
+			<key>director</key>
+			<string>Chris Buck</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+				<string>Musical</string>
+			</array>
+			<key>imageName</key>
+			<string>Frozen</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>102</integer>
+			<key>rating</key>
+			<real>4</real>
+			<key>title</key>
+			<string>Frozen</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Chris Hemsworth</string>
+				<string>Natalie Portman</string>
+				<string>Anthony Hopkins</string>
+			</array>
+			<key>description</key>
+			<string>When Dr. Jane Foster gets cursed with a powerful entity known as the Aether Thor is heralded of the cosmic event known as the Convergence and the genocidal Dark Elves.</string>
+			<key>director</key>
+			<string>Alan Taylor</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Thor The Dark World</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>112</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Thor: The Dark World</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Tom Hanks</string>
+				<string>Ayelet Zurer</string>
+				<string>Armin Mueller-Stahl</string>
+			</array>
+			<key>description</key>
+			<string>Harvard symbologist Robert Langdon works to solve a murder and prevent a terrorist act against the Vatican.</string>
+			<key>director</key>
+			<string>Ron Howard</string>
+			<key>genres</key>
+			<array>
+				<string>Mystery</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Angels &amp; Demons</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>146</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Angels &amp; Demons</string>
+			<key>year</key>
+			<integer>2009</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Chris Hemsworth</string>
+				<string>Natalie Portman</string>
+				<string>Anthony Hopkins</string>
+			</array>
+			<key>description</key>
+			<string>The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard Earth where he soon becomes one of their finest defenders.</string>
+			<key>director</key>
+			<string>Kenneth Branagh</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Thor</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>115</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Thor</string>
+			<key>year</key>
+			<integer>2011</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Chloë Grace Moretz</string>
+				<string>Diedrich Bader</string>
+				<string>James Lipton</string>
+			</array>
+			<key>description</key>
+			<string>The canine star of a fictional scifiaction show that believes his powers are real embarks on a cross country trek to save his costar from a threat he believes is just as real.</string>
+			<key>director</key>
+			<string>Byron Howard</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Drama</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Bolt</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>96</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Bolt</string>
+			<key>year</key>
+			<integer>2008</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Liam Neeson</string>
+				<string>Edgar Ramírez</string>
+				<string>Lily James</string>
+			</array>
+			<key>description</key>
+			<string>Perseus braves the treacherous underworld to rescue his father Zeus captured by his son Ares and brother Hades who unleash the ancient Titans upon the world.</string>
+			<key>director</key>
+			<string>Jonathan Liebesman</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Wrath of the Titans</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>99</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Wrath of the Titans</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Johnny Depp</string>
+				<string>Chloë Grace Moretz</string>
+				<string>Christopher Lee</string>
+			</array>
+			<key>description</key>
+			<string>An imprisoned vampire Barnabas Collins is set free and returns to his ancestral home where his dysfunctional descendants are in need of his protection.</string>
+			<key>director</key>
+			<string>Tim Burton</string>
+			<key>genres</key>
+			<array>
+				<string>Comedy</string>
+				<string>Fantasy</string>
+				<string>Horror</string>
+			</array>
+			<key>imageName</key>
+			<string>Dark Shadows</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>113</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Dark Shadows</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Tom Cruise</string>
+				<string>Jeremy Renner</string>
+				<string>Sean Harris</string>
+			</array>
+			<key>description</key>
+			<string>Ethan and team take on their most impossible mission yet eradicating the Syndicate  an International rogue organization as highly skilled as they are committed to destroying the IMF.</string>
+			<key>director</key>
+			<string>Christopher McQuarrie</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Mission Impossible - Rogue Nation</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>131</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Mission: Impossible - Rogue Nation</string>
+			<key>year</key>
+			<integer>2015</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>cast</key>
+			<array>
+				<string>Anthony Hopkins</string>
+				<string>Simon Merrells</string>
+				<string>Art Malik</string>
+			</array>
+			<key>description</key>
+			<string>Upon his return to his ancestral homeland an American man is bitten and subsequently cursed by a werewolf.</string>
+			<key>director</key>
+			<string>Joe Johnston</string>
+			<key>genres</key>
+			<array>
+				<string>Drama</string>
+				<string>Fantasy</string>
+				<string>Horror</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>The Wolfman</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>119</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>The Wolfman</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Christoph Waltz</string>
+				<string>Alexander Skarsgård</string>
+				<string>Casper Crump</string>
+			</array>
+			<key>description</key>
+			<string>Tarzan having acclimated to life in London is called back to his former home in the jungle to investigate the activities at a mining encampment.</string>
+			<key>director</key>
+			<string>David Yates</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Drama</string>
+				<string>Romance</string>
+			</array>
+			<key>imageName</key>
+			<string>The Legend of Tarzan</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>110</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>The Legend of Tarzan</string>
+			<key>year</key>
+			<integer>2016</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Matthew Broderick</string>
+				<string>Oprah Winfrey</string>
+				<string>Rip Torn</string>
+			</array>
+			<key>description</key>
+			<string>Barry B. Benson a bee just graduated from college is disillusioned at his lone career choice making honey. On a special trip outside the hive Barrys life is saved by Vanessa a florist in New York City. As their relationship blossoms he discovers humans actually eat honey and subsequently decides to sue them.</string>
+			<key>director</key>
+			<string>Steve Hickner</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Bee Movie</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>91</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Bee Movie</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Angelina Jolie Pitt</string>
+				<string>Gary Oldman</string>
+				<string>Mike Bell</string>
+			</array>
+			<key>description</key>
+			<string>Po and his friends fight to stop a peacock villain from conquering China with a deadly new weapon but first the Dragon Warrior must come to terms with his past.</string>
+			<key>director</key>
+			<string>Jennifer Yuh Nelson</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Kung Fu Panda 2</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>90</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Kung Fu Panda 2</string>
+			<key>year</key>
+			<integer>2011</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Seychelle Gabriel</string>
+				<string>Noah Ringer</string>
+				<string>Aasif Mandvi</string>
+			</array>
+			<key>description</key>
+			<string>Follows the adventures of Aang a young successor to a long line of Avatars who must master all four elements and stop the Fire Nation from enslaving the Water Tribes and the Earth Kingdom.</string>
+			<key>director</key>
+			<string>M. Night Shyamalan</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>The Last Airbender</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>103</integer>
+			<key>rating</key>
+			<real>2</real>
+			<key>title</key>
+			<string>The Last Airbender</string>
+			<key>year</key>
+			<integer>2010</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Philip Seymour Hoffman</string>
+				<string>Tom Cruise</string>
+				<string>Eddie Marsan</string>
+			</array>
+			<key>description</key>
+			<string>Agent Ethan Hunt comes into conflict with a dangerous and sadistic arms dealer who threatens his life and his fiance in response .</string>
+			<key>director</key>
+			<string>J.J. Abrams</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Mission Impossible III</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>124</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Mission: Impossible III</string>
+			<key>year</key>
+			<integer>2006</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Channing Tatum</string>
+				<string>Jake Weber</string>
+				<string>Matt Craven</string>
+			</array>
+			<key>description</key>
+			<string>While on a tour of the White House with his young daughter a Capitol policeman springs into action to save his child and protect the president from a heavily armed group of paramilitary invaders.</string>
+			<key>director</key>
+			<string>Roland Emmerich</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Drama</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>White House Down</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>131</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>White House Down</string>
+			<key>year</key>
+			<integer>2013</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Hugh Jackman</string>
+				<string>Kate Winslet</string>
+				<string>David Suchet</string>
+			</array>
+			<key>description</key>
+			<string>The story of an uptown rat that gets flushed down the toilet from his penthouse apartment ending in the sewers of London where he has to learn a whole new and different way of life.</string>
+			<key>director</key>
+			<string>David Bowers</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Flushed Away</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>85</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Flushed Away</string>
+			<key>year</key>
+			<integer>2006</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Hugh Jackman</string>
+				<string>Cara Delevingne</string>
+				<string>Nonso Anozie</string>
+			</array>
+			<key>description</key>
+			<string>12yearold orphan Peter is spirited away to the magical world of Neverland where he finds both fun and danger and ultimately discovers his destiny  to become the hero who will be forever known as Peter Pan.</string>
+			<key>director</key>
+			<string>Joe Wright</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Family</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Pan</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>111</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Pan</string>
+			<key>year</key>
+			<integer>2015</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>R</string>
+			<key>cast</key>
+			<array>
+				<string>Brad Pitt</string>
+				<string>Orlando Bloom</string>
+				<string>Julian Glover</string>
+			</array>
+			<key>description</key>
+			<string>An adaptation of Homers great epic the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved.</string>
+			<key>director</key>
+			<string>Wolfgang Petersen</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+			</array>
+			<key>imageName</key>
+			<string>Troy</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>196</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Troy</string>
+			<key>year</key>
+			<integer>2004</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>Jada Pinkett Smith</string>
+				<string>Martin Short</string>
+				<string>Cedric the Entertainer</string>
+			</array>
+			<key>description</key>
+			<string>Alex Marty Gloria and Melman are still fighting to get home to their beloved Big Apple. Their journey takes them through Europe where they find the perfect cover a traveling circus which they reinvent  Madagascar style.</string>
+			<key>director</key>
+			<string>Eric Darnell</string>
+			<key>genres</key>
+			<array>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Madagascar 3 Europe&apos;s Most Wanted</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>93</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Madagascar 3: Europe&apos;s Most Wanted</string>
+			<key>year</key>
+			<integer>2012</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Toby Stephens</string>
+				<string>Colin Salmon</string>
+				<string>Rick Yune</string>
+			</array>
+			<key>description</key>
+			<string>James Bond is sent to investigate the connection between a North Korean terrorist and a diamond mogul who is funding the development of an international space weapon.</string>
+			<key>director</key>
+			<string>Lee Tamahori</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Thriller</string>
+			</array>
+			<key>imageName</key>
+			<string>Die Another Day</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>133</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Die Another Day</string>
+			<key>year</key>
+			<integer>2002</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG13</string>
+			<key>cast</key>
+			<array>
+				<string>Robin Wright</string>
+				<string>Anthony Hopkins</string>
+				<string>Sebastian Roché</string>
+			</array>
+			<key>description</key>
+			<string>The warrior Beowulf must fight and defeat the monster Grendel who is terrorizing Denmark and later Grendels mother who begins killing out of revenge.</string>
+			<key>director</key>
+			<string>Robert Zemeckis</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Fantasy</string>
+			</array>
+			<key>imageName</key>
+			<string>Beowulf</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>115</integer>
+			<key>rating</key>
+			<real>3</real>
+			<key>title</key>
+			<string>Beowulf</string>
+			<key>year</key>
+			<integer>2007</integer>
+		</dict>
+		<dict>
+			<key>admissionRating</key>
+			<string>PG</string>
+			<key>cast</key>
+			<array>
+				<string>J.K. Simmons</string>
+				<string>Angelina Jolie Pitt</string>
+				<string>Wayne Knight</string>
+			</array>
+			<key>description</key>
+			<string>Continuing his legendary adventures of awesomeness Po must face two hugely epic but different threats one supernatural and the other a little closer to his home.</string>
+			<key>director</key>
+			<string>Alessandro Carloni</string>
+			<key>genres</key>
+			<array>
+				<string>Action</string>
+				<string>Adventure</string>
+				<string>Animation</string>
+				<string>Comedy</string>
+				<string>Family</string>
+			</array>
+			<key>imageName</key>
+			<string>Kung Fu Panda 3</string>
+			<key>languages</key>
+			<array>
+				<string>English</string>
+			</array>
+			<key>length</key>
+			<integer>95</integer>
+			<key>rating</key>
+			<real>3.5</real>
+			<key>title</key>
+			<string>Kung Fu Panda 3</string>
+			<key>year</key>
+			<integer>2016</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
