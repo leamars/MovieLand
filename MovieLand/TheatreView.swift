@@ -8,15 +8,23 @@
 
 import UIKit
 
+protocol TheatreViewDelegate: class {
+    func didTapOnTheatre(theatre: TheatreView)
+}
+
 class TheatreView: UIView {
     
+    weak var delegate: TheatreViewDelegate?
+    
+    // Data
     var title: String
     var milesAway: Float
     var imageName: String
     
-    let titleLabel = UILabel()
-    let milesLabel = UILabel()
-    let imageView = UIImageView()
+    // UI
+    private let titleLabel = UILabel()
+    private let milesLabel = UILabel()
+    private let imageView = UIImageView()
     
     init(with title: String, distance: Float, imageName:String) {
         self.title = title
@@ -37,8 +45,19 @@ class TheatreView: UIView {
         imageView.image = UIImage(named: imageName)
     }
     
+    private func setUpGestures() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        self.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func viewTapped() {
+        guard let delegate = delegate else { return }
+        delegate.didTapOnTheatre(theatre: self)
+    }
+    
     private func setupViews() {
         
+        setUpGestures()
         setupData()
         
         // Image View

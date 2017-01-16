@@ -138,7 +138,7 @@ extension ViewController {
             toItem: nil,
             attribute: .notAnAttribute,
             multiplier: 1.0,
-            constant: filtersViewCompactSize)
+            constant: filtersViewExpandedSize - filtersViewCompactSize)
         
         view.addConstraints([
             userCenterX,

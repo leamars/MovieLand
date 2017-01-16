@@ -23,12 +23,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var filterView: FiltersView = FiltersView()
     var filtersOpen = false
     let filtersViewCompactSize:CGFloat = 180
-    let filtersViewExpandedSize:CGFloat = 360
+    let filtersViewExpandedSize:CGFloat = 400
     
     // User View
     let userView: UserView = UserView(numberRated: 76) // Should get the right number
-    
-    let locationManager = LocationManager()
     
     // Presentation
     var isPresenting: Bool = false
@@ -39,10 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Filtering
     var filterGenres: [Genre] = []
     
-    // Empty Vie
-    var emptyView = UIImageView(image: UIImage(named: "movieLandSad")!)
-    
-    enum Mode: String {
+    enum DisplayMode: String {
         case Default
         case Search
         case GenreSearch
@@ -61,12 +56,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 return MovieStore.genreResults(on: movies, for: genres)
             }
         }
+        
+        func sectionMovieData(for movies: [Movie]) -> [MovieSection: [Movie]] {
+            return MovieStore.moviesBySection(movies: movies)
+        }
     }
     
-    var mode: Mode = .Default
+    var mode: DisplayMode = .Default
     
     var allMovies:[Movie] = []
-    var movieSections: [Genre: [Movie]] = [:]
+    var genreSections: [Genre: [Movie]] = [:]
+    var movieSections: [MovieSection: [Movie]] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,7 +99,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func setupViews() {
         
-        movieSections = mode.movieData(for: allMovies, with: nil, for: [])
+        movieSections = mode.sectionMovieData(for: allMovies)
         filterView.filtersViewDelegate = self
         
         view.backgroundColor = UIColor.yellow
@@ -130,11 +130,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let identifier = MovieCollectionCell.identifier
         if let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? MovieCollectionCell {
             
-            let key = Array(movieSections.keys)[indexPath.row]
-            if let collectionData = movieSections[key] {
-                cell.collectionData = collectionData
+            var collectionName: String = ""
+            var collectionData: [Movie] = []
+            
+            switch mode {
+            case .Default:
+                let cellName = Array(movieSections.keys)[indexPath.row]
+                if let cellData = movieSections[cellName] {
+                    collectionName = cellName.rawValue
+                    collectionData = cellData
+                    
+                }
+            case .Search, .GenreSearch:
+                let cellName = Array(genreSections.keys)[indexPath.row]
+                if let cellData = genreSections[cellName] {
+                    collectionName = cellName.rawValue
+                    collectionData = cellData
+                    
+                }
             }
-            cell.collectionName = key.rawValue
+
+            cell.collectionName = collectionName
+            cell.collectionData = collectionData
             cell.movieCollectionCellDelegate = self
             
             return cell
@@ -144,7 +161,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movieSections.keys.count
+        switch mode {
+        case .Default:
+            return movieSections.keys.count
+        case .Search, .GenreSearch:
+            return genreSections.keys.count
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -231,10 +253,10 @@ extension ViewController: FiltersViewDelegate {
     func searchControllerDidChange(with searchQuery: String?) {
         if searchQuery != nil && searchQuery != "" {
             mode = .Search
-            movieSections = mode.movieData(for: allMovies, with: searchQuery, for: [])
+            genreSections = mode.movieData(for: allMovies, with: searchQuery, for: [])
         } else {
             mode = .Default
-            movieSections = mode.movieData(for: allMovies, with: nil, for: [])
+            movieSections = mode.sectionMovieData(for: allMovies)
         }
         
         tableView.reloadData()
@@ -244,7 +266,7 @@ extension ViewController: FiltersViewDelegate {
         mode = .GenreSearch
         filterGenres.append(genre)
         
-        movieSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
+        genreSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
         
         tableView.reloadData()
     }
@@ -254,10 +276,10 @@ extension ViewController: FiltersViewDelegate {
         filterGenres.remove(at: index!)
         if filterGenres.count > 0 {
             mode = .GenreSearch
-            movieSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
+            genreSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
         } else {
             mode = .Default
-            movieSections = mode.movieData(for: allMovies, with: nil, for: [])
+            movieSections = mode.sectionMovieData(for: allMovies)
         }
         
         tableView.reloadData()
@@ -273,9 +295,12 @@ extension ViewController: QuickMovieDetailsDelegate {
     
     func userRating(for movie: Movie, wasChanged toRating: Double) {
         let movieIndex = allMovies.index(of: movie)
-        let newMovie = movie
-        newMovie.yourActualRating = toRating
-        allMovies[movieIndex!] = newMovie
+        
+        allMovies[movieIndex!].yourActualRating = toRating
+        allMovies[movieIndex!].movieSection = .AlreadyRated
+        
+        movieSections = mode.sectionMovieData(for: allMovies)
+        tableView.reloadData()
     }
 }
 
@@ -283,9 +308,12 @@ extension ViewController: QuickMovieDetailsDelegate {
 extension ViewController: MovieDetailsDelegate {
     func movie(updated movie: Movie, with rating: Double) {
         let movieIndex = allMovies.index(of: movie)
-        let newMovie = movie
-        newMovie.yourActualRating = rating
-        allMovies[movieIndex!] = newMovie
+
+        allMovies[movieIndex!].yourActualRating = rating
+        allMovies[movieIndex!].movieSection = .AlreadyRated
+        
+        movieSections = mode.sectionMovieData(for: allMovies)
+        tableView.reloadData()
     }
 }
 

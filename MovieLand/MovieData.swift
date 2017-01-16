@@ -6,7 +6,6 @@
 //  Copyright © 2017 Razeware. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // File for fake movie data
@@ -15,7 +14,7 @@ enum Genre: String {
     case Action
     case Adventure
     case Horror
-    case ScienceFiction // This might cause issues if it's categorized as SciFi (or if there's spaces)
+    case ScienceFiction
     case Comedy
     case Drama
     case Documentary
@@ -35,12 +34,17 @@ enum Genre: String {
     case Music
     case Family
     case History
-    // Non genre cases - these could be an extension ?
-    case Recommended
-    case Favorites
-    case Wishlist
     
-    static var count: Int { return Genre.Wishlist.hashValue + 1}
+    static var count: Int { return Genre.History.hashValue + 1}
+}
+
+enum MovieSection: String {
+    case TopPicks
+    case Recent
+    case Rate
+    case AlreadyRated
+    
+    static var count: Int { return MovieSection.Rate.hashValue + 1}
 }
 
 struct Filters {
@@ -73,6 +77,21 @@ struct MovieStore {
     
     static func movies() -> [Movie] {
         return parseMovies()
+    }
+    
+    static func moviesBySection(movies: [Movie]) -> [MovieSection : [Movie]] {
+        var moviesBySection: [MovieSection:[Movie]] = [:]
+        for movie in movies {
+            if let existingSection = moviesBySection[movie.movieSection] {
+                var sectionCopy = existingSection
+                sectionCopy.append(movie)
+                moviesBySection[movie.movieSection] = sectionCopy
+            } else {
+                moviesBySection[movie.movieSection] = [movie]
+            }
+        }
+        
+        return moviesBySection
     }
     
     static func dividedBySection(movies: [Movie]) -> [Genre: [Movie]] {
@@ -134,7 +153,7 @@ struct MovieStore {
         
         let combinedResults = titleResults + directorResults + yearResults + castResults + languageResults
                 
-        searchResults[.Recommended] = combinedResults
+        searchResults[.Romance] = combinedResults
         return searchResults
     }
     
@@ -181,7 +200,7 @@ struct MovieStore {
 
         combinedResults = combinedResults + castResults + languageResults
         
-        searchResults[.Recommended] = combinedResults
+        searchResults[.Comedy] = combinedResults
         return searchResults
     }
     
@@ -227,31 +246,33 @@ class Movie: Equatable {
     let admissionRating: AdmissionRating
     let yourPredictedRating: Double
     var yourActualRating: Double?
+    var movieSection: MovieSection
     let image: UIImage
     
     init(title: String, year: Int, length: Int, languages: [String], cast: [String], director: String, genres: [Genre], rating: Double, description: String, admissionRating: AdmissionRating, image: UIImage) {
-        self.title = title
-        self.year = year
-        self.length = length
-        self.languages = languages
-        self.cast = cast
-        self.director = director
-        self.genres = genres
-        self.rating = rating
-        self.description = description
-        self.admissionRating = admissionRating
-        self.image = image
+        self.title                        = title
+        self.year                         = year
+        self.length                       = length
+        self.languages                    = languages
+        self.cast                         = cast
+        self.director                     = director
+        self.genres                       = genres
+        self.rating                       = rating
+        self.description                  = description
+        self.admissionRating              = admissionRating
+        self.image                        = image
         // This defaults to audience rating + or - 0.5 for presentation sake
         // We're not building a real prediction engine here
-        let diceRoll = Int(arc4random_uniform(3)) - 1
-        let yourPredictedRating = rating + Double(diceRoll) * 0.5
-        self.yourPredictedRating = yourPredictedRating > 5 ? 5 : yourPredictedRating
-        self.yourActualRating = nil
+        let random                        = Int(arc4random_uniform(3)) - 1
+        let yourPredictedRating           = rating + Double(random) * 0.5
+        self.yourPredictedRating          = yourPredictedRating > 5 ? 5 : yourPredictedRating
+        self.yourActualRating             = nil
+        let movieSections: [MovieSection] = [.TopPicks, .Recent, .Rate]
+        self.movieSection                 = movieSections[random+1]
     }
 
     static func == (lhs: Movie, rhs: Movie) -> Bool {
-        return
-        lhs.title == rhs.title &&
+        return lhs.title == rhs.title &&
         lhs.year == rhs.year &&
         lhs.length == rhs.length &&
         lhs.languages == rhs.languages &&

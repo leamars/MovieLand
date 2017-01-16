@@ -170,61 +170,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieLand/MovieData.swift"
-            timestampString = "506227623.79292"
+            timestampString = "506264494.436615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "searchResults(on:for:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MovieLand/QuickMovieDetailsViewController.swift"
-            timestampString = "506224066.151697"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "ratingDidChange(to:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieLand.QuickMovieDetailsViewController.ratingDidChange (to : Swift.Double) -&gt; ()"
-                  moduleName = "MovieLand"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lmarolt/Desktop/RW/MovieLand/MovieLand/QuickMovieDetailsViewController.swift"
-                  timestampString = "506233138.883943"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "99"
-                  endingLineNumber = "99"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieLand.QuickMovieDetailsViewController.ratingDidChange (to : Swift.Double) -&gt; ()"
-                  moduleName = "MovieLand"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lmarolt/Desktop/RW/MovieLand/MovieLand/QuickMovieDetailsViewController.swift"
-                  timestampString = "506233138.885266"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "99"
-                  endingLineNumber = "99"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -266,12 +218,12 @@
                   moduleName = "MovieLand"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lmarolt/Desktop/RW/MovieLand/MovieLand/FiltersView.swift"
-                  timestampString = "506233138.890385"
+                  timestampString = "506264666.352691"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "91"
                   endingLineNumber = "91"
-                  offsetFromSymbolStart = "28">
+                  offsetFromSymbolStart = "26">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -281,12 +233,12 @@
                   moduleName = "MovieLand"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/lmarolt/Desktop/RW/MovieLand/MovieLand/FiltersView.swift"
-                  timestampString = "506233138.89152"
+                  timestampString = "506264666.353937"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "91"
                   endingLineNumber = "91"
-                  offsetFromSymbolStart = "88">
+                  offsetFromSymbolStart = "77">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -298,11 +250,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieLand/ViewController.swift"
-            timestampString = "506231076.126235"
+            timestampString = "506263566.347397"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "filtersDidSelect(new:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieLand/ViewController.swift"
+            timestampString = "506263566.347397"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
             landmarkName = "filtersDidDeselect(new:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -313,13 +281,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieLand/UserView.swift"
-            timestampString = "506233038.412613"
+            filePath = "MovieLand/ViewController.swift"
+            timestampString = "506263566.347397"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "setupViews()"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "searchControllerDidChange(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -329,13 +297,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieLand/UserView.swift"
-            timestampString = "506233092.766274"
+            filePath = "MovieLand/ViewController.swift"
+            timestampString = "506264529.748935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "setupViews()"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "userRating(for:wasChanged:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieLand/ViewController.swift"
+            timestampString = "506264666.191703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "movie(updated:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieLand/ViewController.swift"
+            timestampString = "506264598.509583"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

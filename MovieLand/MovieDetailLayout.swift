@@ -55,32 +55,7 @@ extension MovieDetailViewController {
             imageHeight,
             imageWidth]
         )
-        
-//        closeButton.translatesAutoresizingMaskIntoConstraints = false
-//        
-//        let buttonTop = NSLayoutConstraint(
-//            item: closeButton,
-//            attribute: .top,
-//            relatedBy: .equal,
-//            toItem: view,
-//            attribute: .top,
-//            multiplier: 1.0,
-//            constant: 20.0)
-//        
-//        let buttonRight = NSLayoutConstraint(
-//            item: closeButton,
-//            attribute: .trailing,
-//            relatedBy: .equal,
-//            toItem: view,
-//            attribute: .trailing,
-//            multiplier: 1.0,
-//            constant: -20.0)
-//        
-//        view.addConstraints([
-//            buttonTop,
-//            buttonRight]
-//        )
-        
+    
         addTopContainerViewConstraints()
         addBottomContainerViewConstraints()
     }
@@ -180,31 +155,5 @@ extension MovieDetailViewController {
             bottomContainerHeight,
             bottomContainerWidth]
         )
-
-        closeButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        let buttonBottom = NSLayoutConstraint(
-            item: closeButton,
-            attribute: .bottom,
-            relatedBy: .equal,
-            toItem: bottomDetailView,
-            attribute: .bottom,
-            multiplier: 1.0,
-            constant: -20.0)
-        
-        let buttonRight = NSLayoutConstraint(
-            item: closeButton,
-            attribute: .trailing,
-            relatedBy: .equal,
-            toItem: bottomDetailView,
-            attribute: .trailing,
-            multiplier: 1.0,
-            constant: -20.0)
-        
-        bottomDetailView.addConstraints([
-            buttonBottom,
-            buttonRight]
-        )
-        
     }
 }

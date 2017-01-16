@@ -8,8 +8,15 @@
 
 import UIKit
 
+protocol BottomDetailDelegate: class {
+    func didTap(on theatre: TheatreView)
+}
+
 class BottomDetailView: UIView {
     
+    weak var delegate: BottomDetailDelegate?
+    
+    // Data
     private let movie: Movie
     
     // UI
@@ -113,12 +120,15 @@ class BottomDetailView: UIView {
         theatreView.translatesAutoresizingMaskIntoConstraints = false
         
         let amcTheatre = TheatreView(with: "AMC Loews", distance: 0.8, imageName: "amcTheatre")
+        amcTheatre.delegate = self
         theatreView.addSubview(amcTheatre)
         
         let villageTheatre = TheatreView(with: "Village East", distance: 1.4, imageName: "villageTheatre")
+        villageTheatre.delegate = self
         theatreView.addSubview(villageTheatre)
         
         let lincolnTheatre = TheatreView(with: "Lincoln Plaza", distance: 5.7, imageName: "lincolnTheatre")
+        lincolnTheatre.delegate = self
         theatreView.addSubview(lincolnTheatre)
         
         villageTheatre.translatesAutoresizingMaskIntoConstraints = false
@@ -403,5 +413,12 @@ class BottomDetailView: UIView {
             descriptionWidth]
         )
 
+    }
+}
+
+extension BottomDetailView: TheatreViewDelegate {
+    func didTapOnTheatre(theatre: TheatreView) {
+        guard let delegate = delegate else { return }
+        delegate.didTap(on: theatre)
     }
 }

@@ -16,17 +16,18 @@ class MovieDetailViewController: UIViewController {
     
     weak var delegate: MovieDetailsDelegate?
     
-    var movieData: Movie
+    var movie: Movie
     
     let imageView = UIImageView()
-    let closeButton = UIButton()
     
     let topDetailView: TopDetailView
     let bottomDetailView: BottomDetailView
     
+    let locationManager = LocationManager()
+    
     init(with movie: Movie) {
         
-        self.movieData = movie
+        self.movie = movie
         self.topDetailView = TopDetailView(with: movie)
         self.bottomDetailView = BottomDetailView(with: movie)
         
@@ -47,7 +48,7 @@ class MovieDetailViewController: UIViewController {
     func setupView() {
         
         // Image View
-        imageView.image = movieData.image
+        imageView.image = movie.image
         imageView.clipsToBounds = true
         view.addSubview(imageView)
         
@@ -56,18 +57,11 @@ class MovieDetailViewController: UIViewController {
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(blurEffectView)
-        
-        // Close Button
-        closeButton.addTarget(self, action: #selector(MovieDetailViewController.close), for: .touchUpInside)
-        closeButton.setTitle("CLOSE", for: .normal)
-        closeButton.setTitle("CLOSE", for: .highlighted)
-        closeButton.setTitle("CLOSE", for: .selected)
-        closeButton.setTitleColor(UIColor.clear, for: .normal)
-        //view.addSubview(closeButton)
-        bottomDetailView.addSubview(closeButton)
-        
+                
         topDetailView.detailDelegate = self
         view.addSubview(topDetailView)
+        
+        bottomDetailView.delegate = self
         view.addSubview(bottomDetailView)
         
         // Swipe down recognizer
@@ -86,9 +80,23 @@ class MovieDetailViewController: UIViewController {
 
 extension MovieDetailViewController: TopDetailViewDelegate {
     func userRating(for movie: Movie, wasChanged to: Double) {
-        if let delegate = delegate {
-            delegate.movie(updated: movie, with: to)
-        }
+        guard let delegate = delegate else { return }
+        delegate.movie(updated: movie, with: to)
     }
 }
+
+extension MovieDetailViewController: BottomDetailDelegate {
+    func didTap(on theatre: TheatreView) {
+        // Show Alert for ticket booked
+        let alertController = UIAlertController(title: "Ahoy Movie Buff!", message:
+            "So, you're trying to see \(movie.title) at the wonderful \(theatre.title)?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertController.addAction(UIAlertAction(title: "Buy Ticket", style: UIAlertActionStyle.default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+}
+
+
 

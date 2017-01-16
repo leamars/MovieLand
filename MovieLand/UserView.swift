@@ -55,7 +55,7 @@ class UserView: UIView {
         addSubview(nameLabel)
         
         // Rating
-        ratingDescription.text = "You are using the Pikachu Recommendation Engine. It uses item-to-item collaborative filtering to deliver you the best results possible. \nGotta catch 'em all!"
+        ratingDescription.text = "You are using the Pikachu Recommendation Engine. It uses item-to-item collaborative filtering to deliver you the best results possible. \nGotta catch 'em allg yg p!"
         ratingDescription.font = UIFont.brown(withSize: 14)
         ratingDescription.numberOfLines = 0
         ratingDescription.textAlignment = .center
@@ -73,13 +73,13 @@ class UserView: UIView {
             message = MessageForNumber.Force
         }
         
-        let string = "You've rated \(numberRated) movies. \(message.message())"
+        let string = "You've rated \(numberRated) movies."
         let userAttributedString = NSMutableAttributedString(string: string)
         let userAttributedRange = NSRange.init(location: 0, length: string.characters.count)
         userAttributedString.addAttributes(
             [NSFontAttributeName : UIFont.brown(withSize: 14)],
             range: userAttributedRange)
-        userAttributedString.addAttributes([NSFontAttributeName : UIFont.brownBold(withSize: 14)], range: NSRange(location: 12, length: 8+String(numberRated).characters.count))
+        userAttributedString.addAttributes([NSFontAttributeName : UIFont.brownBold(withSize: 18)], range: NSRange(location: 12, length: 8+String(numberRated).characters.count))
         
         userMessage.attributedText = userAttributedString
         userMessage.numberOfLines = 0
