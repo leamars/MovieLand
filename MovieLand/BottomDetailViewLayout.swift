@@ -9,126 +9,129 @@
 import UIKit
 
 extension BottomDetailView {
-    func setupTheatreView() {
+    func setupTheatreView(with locationEnabled: Bool) {
         
         theatreView.translatesAutoresizingMaskIntoConstraints = false
         
-        let amcTheatre = TheatreView(with: "AMC Loews", distance: 0.8, imageName: "amcTheatre")
-        amcTheatre.delegate = self
-        theatreView.addSubview(amcTheatre)
-        
-        let villageTheatre = TheatreView(with: "Village East", distance: 1.4, imageName: "villageTheatre")
-        villageTheatre.delegate = self
-        theatreView.addSubview(villageTheatre)
-        
-        let lincolnTheatre = TheatreView(with: "Lincoln Plaza", distance: 5.7, imageName: "lincolnTheatre")
-        lincolnTheatre.delegate = self
-        theatreView.addSubview(lincolnTheatre)
-        
-        villageTheatre.translatesAutoresizingMaskIntoConstraints = false
-        
-        let villageTop = NSLayoutConstraint(
-            item: villageTheatre,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .top,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let villageCenterX = NSLayoutConstraint(
-            item: villageTheatre,
-            attribute: .centerX,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .centerX,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let villageBottom = NSLayoutConstraint(
-            item: amcTheatre,
-            attribute: .bottom,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .bottom,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        theatreView.addConstraints([
-            villageTop,
-            villageCenterX,
-            villageBottom]
-        )
-        
-        amcTheatre.translatesAutoresizingMaskIntoConstraints = false
-        
-        let amcTop = NSLayoutConstraint(
-            item: amcTheatre,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .top,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let amcLeading = NSLayoutConstraint(
-            item: amcTheatre,
-            attribute: .leading,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .leading,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let amcBottom = NSLayoutConstraint(
-            item: amcTheatre,
-            attribute: .bottom,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .bottom,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        theatreView.addConstraints([
-            amcTop,
-            amcLeading,
-            amcBottom]
-        )
-        
-        lincolnTheatre.translatesAutoresizingMaskIntoConstraints = false
-        
-        let lincolnTop = NSLayoutConstraint(
-            item: lincolnTheatre,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .top,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let lincolnTrailing = NSLayoutConstraint(
-            item: lincolnTheatre,
-            attribute: .trailing,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .trailing,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let lincolnBottom = NSLayoutConstraint(
-            item: lincolnTheatre,
-            attribute: .bottom,
-            relatedBy: .equal,
-            toItem: theatreView,
-            attribute: .bottom,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        theatreView.addConstraints([
-            lincolnTop,
-            lincolnTrailing,
-            lincolnBottom]
-        )
+        if (locationEnabled) {
+            
+            let amcTheatre = TheatreView(with: "AMC Loews", distance: 0.8, imageName: "amcTheatre")
+            amcTheatre.delegate = self
+            theatreView.addSubview(amcTheatre)
+            
+            let villageTheatre = TheatreView(with: "Village East", distance: 1.4, imageName: "villageTheatre")
+            villageTheatre.delegate = self
+            theatreView.addSubview(villageTheatre)
+            
+            let lincolnTheatre = TheatreView(with: "Lincoln Plaza", distance: 5.7, imageName: "lincolnTheatre")
+            lincolnTheatre.delegate = self
+            theatreView.addSubview(lincolnTheatre)
+            
+            villageTheatre.translatesAutoresizingMaskIntoConstraints = false
+            
+            let villageTop = NSLayoutConstraint(
+                item: villageTheatre,
+                attribute: .top,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .top,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            let villageCenterX = NSLayoutConstraint(
+                item: villageTheatre,
+                attribute: .centerX,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .centerX,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            let villageBottom = NSLayoutConstraint(
+                item: amcTheatre,
+                attribute: .bottom,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .bottom,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            theatreView.addConstraints([
+                villageTop,
+                villageCenterX,
+                villageBottom]
+            )
+            
+            amcTheatre.translatesAutoresizingMaskIntoConstraints = false
+            
+            let amcTop = NSLayoutConstraint(
+                item: amcTheatre,
+                attribute: .top,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .top,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            let amcLeading = NSLayoutConstraint(
+                item: amcTheatre,
+                attribute: .leading,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .leading,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            let amcBottom = NSLayoutConstraint(
+                item: amcTheatre,
+                attribute: .bottom,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .bottom,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            theatreView.addConstraints([
+                amcTop,
+                amcLeading,
+                amcBottom]
+            )
+            
+            lincolnTheatre.translatesAutoresizingMaskIntoConstraints = false
+            
+            let lincolnTop = NSLayoutConstraint(
+                item: lincolnTheatre,
+                attribute: .top,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .top,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            let lincolnTrailing = NSLayoutConstraint(
+                item: lincolnTheatre,
+                attribute: .trailing,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .trailing,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            let lincolnBottom = NSLayoutConstraint(
+                item: lincolnTheatre,
+                attribute: .bottom,
+                relatedBy: .equal,
+                toItem: theatreView,
+                attribute: .bottom,
+                multiplier: 1.0,
+                constant: 0.0)
+            
+            theatreView.addConstraints([
+                lincolnTop,
+                lincolnTrailing,
+                lincolnBottom]
+            )
+        }
         
     }
 

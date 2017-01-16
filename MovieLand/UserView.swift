@@ -11,34 +11,24 @@ import UIKit
 class UserView: UIView {
     
     // Data
-    let numberRated: Int
+    var numberRated: Int {
+        didSet {
+            updateRatingData()
+        }
+    }
+    var user: User? {
+        didSet {
+            updateUserData()
+        }
+    }
     
     // UI
     let nameLabel = UILabel()
     let ratingDescription = UILabel()
     let userMessage = UILabel()
     
-    enum MessageForNumber: Int {
-        case Surface = 1
-        case Crawling = 10
-        case Connoseur = 25
-        case Force = 50
-        
-        func message() -> String {
-            switch self {
-            case .Surface:
-                return "You've scratched the surface. Movie greatness abound awaits!"
-            case .Crawling:
-                return "You've watched a couple of movies. But you're still barely just beginning."
-            case .Connoseur:
-                return "Oh hello, madam! How may we serve you today?"
-            case .Force:
-                return "You're a force to be reckoned with! Enjoy your browsing glory."
-            }
-        }
-    }
-    
-    init(numberRated: Int) {
+    init(with user: User?, numberRated: Int) {
+        self.user = user
         self.numberRated = numberRated
         super.init(frame: .zero)
         setupViews()
@@ -48,46 +38,49 @@ class UserView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func updateUserData() {
+        guard let userName = user?.name else { return }
+        nameLabel.text = "Hello, \(userName)!"
+    }
+    
+    private func updateRatingData() {
+        let string = "You've rated \(numberRated) movies."
+        let userAttributedString = NSMutableAttributedString(string: string)
+        let userAttributedRange = NSRange.init(location: 0, length: string.characters.count)
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .center
+        
+        userAttributedString.addAttributes(
+            [NSFontAttributeName : UIFont.brown(withSize: 14),
+             NSParagraphStyleAttributeName : paragraphStyle],
+            range: userAttributedRange)
+        
+        userAttributedString.addAttribute(NSFontAttributeName, value: UIFont.brownBold(withSize: 18), range: NSRange(location: 12, length: 8+String(numberRated).characters.count))
+        
+        userMessage.attributedText = userAttributedString
+    }
+    
     private func setupViews() {
         
         // Name
-        nameLabel.text = "Hello, Lea!"
+        updateUserData()
         nameLabel.font = UIFont.brownBold(withSize: 20)
         addSubview(nameLabel)
         
         // Rating
-        ratingDescription.text = "You are using the Pikachu Recommendation Engine. It uses item-to-item collaborative filtering to deliver you the best results possible. \nGotta catch 'em allg yg p!"
+        ratingDescription.text = "This is a Fabulous Recommendation Engine."
         ratingDescription.font = UIFont.brown(withSize: 14)
         ratingDescription.numberOfLines = 0
         ratingDescription.textAlignment = .center
         addSubview(ratingDescription)
         
-        // User Message
-        var message: MessageForNumber
-        if numberRated < 10 {
-            message = MessageForNumber.Surface
-        } else if numberRated < 25 {
-            message = MessageForNumber.Crawling
-        } else if numberRated < 50 {
-            message = MessageForNumber.Connoseur
-        } else {
-            message = MessageForNumber.Force
-        }
-        
-        let string = "You've rated \(numberRated) movies."
-        let userAttributedString = NSMutableAttributedString(string: string)
-        let userAttributedRange = NSRange.init(location: 0, length: string.characters.count)
-        userAttributedString.addAttributes(
-            [NSFontAttributeName : UIFont.brown(withSize: 14)],
-            range: userAttributedRange)
-        userAttributedString.addAttributes([NSFontAttributeName : UIFont.brownBold(withSize: 18)], range: NSRange(location: 12, length: 8+String(numberRated).characters.count))
-        
-        userMessage.attributedText = userAttributedString
+        updateRatingData()
         userMessage.numberOfLines = 0
         addSubview(userMessage)
         
         setupConstraints()
     }
+
 }
 
 extension UserView {

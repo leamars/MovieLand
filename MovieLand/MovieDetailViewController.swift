@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 protocol MovieDetailsDelegate: class {
     func movie(updated movie: Movie, with rating: Double)
@@ -15,7 +16,7 @@ protocol MovieDetailsDelegate: class {
 class MovieDetailViewController: UIViewController {
     
     weak var delegate: MovieDetailsDelegate?
-    let locationManager = LocationManager()
+    let locationManager = CLLocationManager()
     
     // Data
     var movie: Movie
@@ -41,7 +42,7 @@ class MovieDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.layer.cornerRadius = 50
+        locationManager.requestWhenInUseAuthorization()
         setupView()
     }
     
@@ -98,7 +99,7 @@ extension MovieDetailViewController: BottomDetailDelegate {
         
         // Show alert to buy ticket
         let alertController = UIAlertController(title: "Ahoy Movie Buff!", message:
-            "So, you're trying to see \(movie.title) at the wonderful \(theatre.title) theatre?", preferredStyle: UIAlertControllerStyle.alert)
+            "So, you're trying to see \(movie.title) at the wonderful \(theatre.title) theatre?", preferredStyle: UIAlertControllerStyle.actionSheet)
         
         alertController.addAction(UIAlertAction(title: "Buy Ticket", style: UIAlertActionStyle.default, handler: nil))
         alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
@@ -106,6 +107,5 @@ extension MovieDetailViewController: BottomDetailDelegate {
         present(alertController, animated: true, completion: nil)
     }
 }
-
 
 

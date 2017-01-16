@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Content view - table view + offset
     var containerView: UIView = UIView()
 
-    // Each table view cell is going to have a collection view inside
+    // Each table view cell contains a collection view
     var tableView: UITableView = UITableView()
     var tableTopConstraint = NSLayoutConstraint()
     
@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let filtersViewExpandedSize:CGFloat = 400
     
     // User View
-    let userView: UserView = UserView(numberRated: 76) // Should get the right number
+    let userView: UserView = UserView(with: nil, numberRated: 0) // Should get the right number
     
     // Presentation
     var isPresenting: Bool = false
@@ -42,31 +42,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case Search
         case GenreSearch
         
-        func movieData(for movies: [Movie], with searchQuery: String?, for genres: [Genre]) -> [Genre: [Movie]] {
+        func movieData(for movies: [Movie], with searchQuery: String?, for genres: [Genre]) -> [MovieSection: [Movie]] {
             switch self {
             case .Default:
-                return MovieStore.dividedBySection(movies: movies)
+                return MovieStore.moviesBySection(movies: movies)
             case .Search:
                 if let query = searchQuery {
                     return MovieStore.searchResults(on: movies, for: query.lowercased())
                 } else {
-                    return MovieStore.dividedBySection(movies: movies)
+                    return MovieStore.moviesBySection(movies: movies)
                 }
             case .GenreSearch:
                 return MovieStore.genreResults(on: movies, for: genres)
             }
-        }
-        
-        func sectionMovieData(for movies: [Movie]) -> [MovieSection: [Movie]] {
-            return MovieStore.moviesBySection(movies: movies)
         }
     }
     
     var mode: DisplayMode = .Default
     
     var allMovies:[Movie] = []
-    var genreSections: [Genre: [Movie]] = [:]
     var movieSections: [MovieSection: [Movie]] = [:]
+    
+    var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,8 +71,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         tableView.dataSource = self
         tableView.delegate = self
-        
-        allMovies = (UIApplication.shared.delegate as! AppDelegate).movies
         
         setupViews()
         
@@ -99,7 +94,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func setupViews() {
         
-        movieSections = mode.sectionMovieData(for: allMovies)
         filterView.filtersViewDelegate = self
         
         view.backgroundColor = UIColor.yellow
@@ -121,6 +115,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         view.addSubview(userView)
         
         setupConstraints()
+        
+        // Ask for signup/login
+        guard user == nil else { return }
+        
+        askForSignUp()
     }
     
     //MARK: Table View:
@@ -133,21 +132,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             var collectionName: String = ""
             var collectionData: [Movie] = []
             
-            switch mode {
-            case .Default:
-                let cellName = Array(movieSections.keys)[indexPath.row]
-                if let cellData = movieSections[cellName] {
-                    collectionName = cellName.rawValue
-                    collectionData = cellData
-                    
+            let sortedSections = Array(movieSections.keys).sorted{ $0.rawValue < $1.rawValue }
+            let cellSection = sortedSections[indexPath.row]
+            
+            if let cellData = movieSections[cellSection] {
+                switch cellSection {
+                case .AlreadyRated:
+                    cell.backgroundColor = UIColor(colorLiteralRed: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)
+                case .TopPicks:
+                    cell.backgroundColor = UIColor.yellow
+                case .Rate, .Recent:
+                    cell.backgroundColor = UIColor.white
                 }
-            case .Search, .GenreSearch:
-                let cellName = Array(genreSections.keys)[indexPath.row]
-                if let cellData = genreSections[cellName] {
-                    collectionName = cellName.rawValue
-                    collectionData = cellData
-                    
-                }
+                collectionName = cellSection.sectionName()
+                collectionData = cellData
+                
             }
 
             cell.collectionName = collectionName
@@ -161,12 +160,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch mode {
-        case .Default:
-            return movieSections.keys.count
-        case .Search, .GenreSearch:
-            return genreSections.keys.count
-        }
+        return movieSections.keys.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -247,18 +241,64 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 }
 
+// MARK: Sign Up
+extension ViewController {
+    func askForSignUp() {
+        // Show alert to Sign Up/Log In
+        let alertController = UIAlertController(title: "Sign Up/Login", message:
+            "Hey, please sign up or login to use this app!", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Username"
+            textField.clearButtonMode = .whileEditing
+            textField.borderStyle = UITextBorderStyle.roundedRect
+        }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Password"
+            textField.clearButtonMode = .whileEditing
+            textField.borderStyle = UITextBorderStyle.roundedRect
+            textField.isSecureTextEntry = true
+        }
+        
+        let signUp = UIAlertAction(title: "Sign Up", style: .default) { (action) in
+            guard let username = alertController.textFields?[0].text else { return }
+            self.signUp(with: username, and: "Password")
+        }
+        
+        let login = UIAlertAction(title: "Login", style: .default) { (action) in
+            guard let username = alertController.textFields?[0].text else { return }
+            self.signUp(with: username, and: "Password")
+        }
+        
+        alertController.addAction(signUp)
+        alertController.addAction(login)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func signUp(with username: String, and password: String) {
+        user = User(with: username)
+        userView.user = user
+        
+        // Load Data
+        allMovies = (UIApplication.shared.delegate as! AppDelegate).movies
+        movieSections = mode.movieData(for: allMovies, with: nil, for: [])
+        tableView.reloadData()
+    }
+}
+
 //MARK: Search controller delegate
 extension ViewController: FiltersViewDelegate {
 
     func searchControllerDidChange(with searchQuery: String?) {
         if searchQuery != nil && searchQuery != "" {
             mode = .Search
-            genreSections = mode.movieData(for: allMovies, with: searchQuery, for: [])
         } else {
             mode = .Default
-            movieSections = mode.sectionMovieData(for: allMovies)
         }
         
+        movieSections = mode.movieData(for: allMovies, with: searchQuery, for: filterGenres)
         tableView.reloadData()
     }
     
@@ -266,7 +306,7 @@ extension ViewController: FiltersViewDelegate {
         mode = .GenreSearch
         filterGenres.append(genre)
         
-        genreSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
+        movieSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
         
         tableView.reloadData()
     }
@@ -276,43 +316,41 @@ extension ViewController: FiltersViewDelegate {
         filterGenres.remove(at: index!)
         if filterGenres.count > 0 {
             mode = .GenreSearch
-            genreSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
         } else {
             mode = .Default
-            movieSections = mode.sectionMovieData(for: allMovies)
         }
+        
+        movieSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
         
         tableView.reloadData()
     }
 }
 
-//MARK: QuickMovieDetails Delegate
-extension ViewController: QuickMovieDetailsDelegate {
+//MARK: QuickMovieDetails & MovieDetails Delegate
+extension ViewController: QuickMovieDetailsDelegate, MovieDetailsDelegate {
     func quickMovieDidDismiss() {
         view.isUserInteractionEnabled = true
         isPresenting = false
     }
     
     func userRating(for movie: Movie, wasChanged toRating: Double) {
-        let movieIndex = allMovies.index(of: movie)
-        
-        allMovies[movieIndex!].yourActualRating = toRating
-        allMovies[movieIndex!].movieSection = .AlreadyRated
-        
-        movieSections = mode.sectionMovieData(for: allMovies)
-        tableView.reloadData()
+        update(movie: movie, withRating: toRating)
     }
-}
-
-//MARK: MovieDetailsDelegate Delegate
-extension ViewController: MovieDetailsDelegate {
+    
     func movie(updated movie: Movie, with rating: Double) {
+        update(movie: movie, withRating: rating)
+    }
+    
+    private func update(movie: Movie, withRating: Double) {
         let movieIndex = allMovies.index(of: movie)
-
-        allMovies[movieIndex!].yourActualRating = rating
+        
+        allMovies[movieIndex!].yourActualRating = withRating
         allMovies[movieIndex!].movieSection = .AlreadyRated
         
-        movieSections = mode.sectionMovieData(for: allMovies)
+        movieSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
+        if let alreadyRatedCount = movieSections[MovieSection.AlreadyRated]?.count {
+            userView.numberRated = alreadyRatedCount
+        }
         tableView.reloadData()
     }
 }

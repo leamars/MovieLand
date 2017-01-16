@@ -38,13 +38,26 @@ enum Genre: String {
     static var count: Int { return Genre.History.hashValue + 1}
 }
 
-enum MovieSection: String {
+enum MovieSection: Int {
+    case Rate
     case TopPicks
     case Recent
-    case Rate
     case AlreadyRated
     
-    static var count: Int { return MovieSection.Rate.hashValue + 1}
+    func sectionName() -> String {
+        switch self {
+        case .TopPicks:
+            return "Top Picks"
+        case .AlreadyRated:
+            return "Already Rated"
+        case .Recent:
+            return "Recent"
+        case .Rate:
+            return "Rate"
+        }
+    }
+    
+    static var count: Int { return MovieSection.AlreadyRated.hashValue + 1}
 }
 
 struct Filters {
@@ -94,36 +107,18 @@ struct MovieStore {
         return moviesBySection
     }
     
-    static func dividedBySection(movies: [Movie]) -> [Genre: [Movie]] {
-        var moviesBySection: [Genre:[Movie]] = [:]
-        for movie in movies {
-            for genre in movie.genres {
-                if let existingSection = moviesBySection[genre] {
-                    var sectionCopy = existingSection
-                    sectionCopy.append(movie)
-                    moviesBySection[genre] = sectionCopy
-                } else {
-                    moviesBySection[genre] = [movie]
-                }
-            }
-        }
-        
-        return moviesBySection
-    }
-    
-    static func genreResults(on movies: [Movie], for genres: [Genre]) -> [Genre: [Movie]] {        
+    static func genreResults(on movies: [Movie], for genres: [Genre]) -> [MovieSection: [Movie]] {
         let moviesToKeep = movies.filter { (movie) -> Bool in
             return movie.genres.filter({ (genre) -> Bool in
                 return genres.index(of: genre) != nil
             }).count > 0
         }
         
-        return dividedBySection(movies: moviesToKeep)
+        return moviesBySection(movies: moviesToKeep)
     }
     
-    static func searchResults(on movies: [Movie], for query:String) -> [Genre: [Movie]] {
+    static func searchResults(on movies: [Movie], for query:String) -> [MovieSection : [Movie]] {
         // search by actor, director, year, languages,
-        var searchResults: [Genre: [Movie]] = [:]
         
         let titleResults = movies.filter { (movie) -> Bool in
             return movie.title.components(separatedBy: " ").filter({ (titlePart) -> Bool in
@@ -152,56 +147,8 @@ struct MovieStore {
         }
         
         let combinedResults = titleResults + directorResults + yearResults + castResults + languageResults
-                
-        searchResults[.Romance] = combinedResults
-        return searchResults
-    }
-    
-    static func moviesBySection() -> [Genre: [Movie]] {
         
-        var moviesBySection: [Genre:[Movie]] = [:]
-        for movie in movies() {
-            for genre in movie.genres {
-                if let existingSection = moviesBySection[genre] {
-                    var sectionCopy = existingSection
-                    sectionCopy.append(movie)
-                    moviesBySection[genre] = sectionCopy
-                } else {
-                    moviesBySection[genre] = [movie]
-                }
-            }
-        }
-        
-        return moviesBySection
-    }
-    
-    static func movies(for searchQuery: String) -> [Genre: [Movie]] {
-        
-        // search by actor, director, year, languages, 
-        var searchResults: [Genre: [Movie]] = [:]
-        
-        let titleResults = movies().filter{ $0.title.lowercased() == searchQuery }
-        let directorResults = movies().filter{ $0.director.lowercased() == searchQuery }
-        let yearResults = movies().filter{ String($0.year) == searchQuery }
-
-        var combinedResults = titleResults + directorResults + yearResults
-        
-        let castResults = movies().filter { (movie) -> Bool in
-            return movie.cast.filter({ (castMember) -> Bool in
-                return castMember.lowercased() == searchQuery
-            }).count > 0
-        }
-        
-        let languageResults = movies().filter { (movie) -> Bool in
-            return movie.languages.filter({ (language) -> Bool in
-                return language.lowercased() == searchQuery
-            }).count > 0
-        }
-
-        combinedResults = combinedResults + castResults + languageResults
-        
-        searchResults[.Comedy] = combinedResults
-        return searchResults
+        return moviesBySection(movies: combinedResults)
     }
     
     private static func parseMovies() -> [Movie] {

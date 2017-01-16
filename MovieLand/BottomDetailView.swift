@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 protocol BottomDetailDelegate: class {
     func didTap(on theatre: TheatreView)
@@ -15,9 +16,15 @@ protocol BottomDetailDelegate: class {
 class BottomDetailView: UIView {
     
     weak var delegate: BottomDetailDelegate?
+    var locationManager: CLLocationManager
     
     // Data
     private let movie: Movie
+    var locationEnabled: Bool {
+        didSet {
+            updateTheatreView(with: locationEnabled)
+        }
+    }
     
     // UI
     let scrollContainerView = UIScrollView()
@@ -30,8 +37,11 @@ class BottomDetailView: UIView {
     
     init(with movie: Movie) {
         self.movie = movie
+        self.locationManager = CLLocationManager()
+        self.locationEnabled = CLLocationManager.authorizationStatus() == .authorizedWhenInUse
         super.init(frame: .zero)
         
+        self.locationManager.delegate = self
         setupViews()
     }
     
@@ -44,6 +54,11 @@ class BottomDetailView: UIView {
         buyLabel.text = "BUY TICKETS"
         //TODO: Theatre Views
         descriptionLabel.text = movie.description
+    }
+    
+    func updateTheatreView(with locationEnabled: Bool) {
+        setupTheatreView(with: locationEnabled)
+        setupConstraints()
     }
     
     private func setupViews() {
@@ -100,7 +115,7 @@ class BottomDetailView: UIView {
         addSubview(buyLabel)
         
         // THEATRE VIEW
-        setupTheatreView()
+        setupTheatreView(with: locationEnabled)
         addSubview(theatreView)
         
         // DESCRIPTION
@@ -122,3 +137,13 @@ extension BottomDetailView: TheatreViewDelegate {
         delegate.didTap(on: theatre)
     }
 }
+
+extension BottomDetailView: CLLocationManagerDelegate {
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        locationEnabled = status == .authorizedWhenInUse
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    }
+}
+

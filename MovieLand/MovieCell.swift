@@ -49,20 +49,6 @@ class MovieCell: UICollectionViewCell {
     
     //MARK: Touches
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
-            if #available(iOS 9.0, *) {
-                if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
-                    // 3D Touch capable
-                    let pointOnCell = touch.location(in: contentView)
-                    if let pointInScreen = touch.view?.convert(pointOnCell, to: nil) {
-                        quickViewOpen(at: pointInScreen)
-                    }
-                }
-            }
-        }
-    }
-    
     @objc private func didLongPress(with gestureRecognizer: UILongPressGestureRecognizer) {
         let pointOnCell = gestureRecognizer.location(in: contentView)
         if let pointInScreen = gestureRecognizer.view?.convert(pointOnCell, to: nil) {

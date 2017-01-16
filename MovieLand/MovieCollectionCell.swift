@@ -75,6 +75,12 @@ class MovieCollectionCell: UITableViewCell {
         contentView.addSubview(containerView)
         selectionStyle = .none
         
+        if collectionData.count > 0 {
+            if collectionData[0].movieSection == .AlreadyRated {
+                backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
+            }
+        }
+        
         // Title Label
         containerView.addSubview(titleLabel)
         titleLabel.text          = "RECOMMENDED"
