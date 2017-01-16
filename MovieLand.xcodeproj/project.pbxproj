@@ -32,7 +32,7 @@
 		307856CD1E264025003D31AF /* Brown-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 307856CC1E264025003D31AF /* Brown-Bold.otf */; };
 		307856CF1E264043003D31AF /* Brown-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 307856CE1E264043003D31AF /* Brown-Light.otf */; };
 		307856D11E264048003D31AF /* Brown-Light-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 307856D01E264048003D31AF /* Brown-Light-Italic.otf */; };
-		307856D31E2641E6003D31AF /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307856D21E2641E6003D31AF /* UIElements.swift */; };
+		307856D31E2641E6003D31AF /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307856D21E2641E6003D31AF /* UIHelpers.swift */; };
 		307856D51E267F9F003D31AF /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307856D41E267F9F003D31AF /* FiltersView.swift */; };
 		307856D71E26C3C7003D31AF /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307856D61E26C3C7003D31AF /* GenreCell.swift */; };
 		30F234711E2BB75200E5F155 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F234701E2BB75200E5F155 /* StarsView.swift */; };
@@ -69,7 +69,7 @@
 		307856CC1E264025003D31AF /* Brown-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brown-Bold.otf"; sourceTree = "<group>"; };
 		307856CE1E264043003D31AF /* Brown-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brown-Light.otf"; sourceTree = "<group>"; };
 		307856D01E264048003D31AF /* Brown-Light-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Brown-Light-Italic.otf"; sourceTree = "<group>"; };
-		307856D21E2641E6003D31AF /* UIElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
+		307856D21E2641E6003D31AF /* UIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
 		307856D41E267F9F003D31AF /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		307856D61E26C3C7003D31AF /* GenreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
 		30F234701E2BB75200E5F155 /* StarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		3055DEB21E2CF85000D2C378 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				307856D21E2641E6003D31AF /* UIElements.swift */,
+				307856D21E2641E6003D31AF /* UIHelpers.swift */,
 				305C52D81E1E876D0029EC68 /* Main.storyboard */,
 				305C52DD1E1E876D0029EC68 /* LaunchScreen.storyboard */,
 			);
@@ -304,7 +304,7 @@
 				306A28D41E21676200B77FAE /* MovieData.swift in Sources */,
 				30F2347B1E2C737C00E5F155 /* UserView.swift in Sources */,
 				302D271C1E2A3DE80063DBCF /* FiltersViewLayout.swift in Sources */,
-				307856D31E2641E6003D31AF /* UIElements.swift in Sources */,
+				307856D31E2641E6003D31AF /* UIHelpers.swift in Sources */,
 				302D27341E2BA9CB0063DBCF /* BottomDetailView.swift in Sources */,
 				307856D71E26C3C7003D31AF /* GenreCell.swift in Sources */,
 				3055DEB51E2CFE3E00D2C378 /* QuickMovieDetailLayout.swift in Sources */,
