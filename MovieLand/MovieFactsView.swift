@@ -10,14 +10,15 @@ import UIKit
 
 class MovieFactsView: UIView {
     
-    private let movie: Movie
-    private let fontSize: CGFloat
+    // Data
+    let movie: Movie
+    let fontSize: CGFloat
     
     // UI
-    private let yearLabel = UILabel()
-    private let admissionRatingFrame = UIView()
-    private let admissionRatingLabel = UILabel()
-    private let lengthLabel = UILabel()
+    let yearLabel = UILabel()
+    let admissionRatingFrame = UIView()
+    let admissionRatingLabel = UILabel()
+    let lengthLabel = UILabel()
     
     init(with movie: Movie, fontSize:CGFloat) {
         self.movie = movie
@@ -61,8 +62,10 @@ class MovieFactsView: UIView {
         
         setupConstraints()
     }
-    
-    private func setupConstraints() {
+}
+
+extension MovieFactsView {
+    func setupConstraints() {
         
         admissionRatingFrame.translatesAutoresizingMaskIntoConstraints = false
         
@@ -228,6 +231,5 @@ class MovieFactsView: UIView {
             top,
             bottom]
         )
-
     }
 }

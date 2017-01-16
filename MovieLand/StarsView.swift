@@ -72,14 +72,14 @@ class StarsView: UIView {
     weak var ratingDelegate: StarsViewDelegate?
     
     // Round float to nearest 0.5
-    private let rating: Double
+    let rating: Double
     
     // UI
-    private let starsView = UIView()
-    private let fullStarImage = UIImage(named: "FullStar")
-    private let emptyStarImage = UIImage(named: "EmptyStar")
-    private let halfStarImage = UIImage(named: "HalfStar")
-    private var allStars: [StarsImageView] = []
+    let starsView = UIView()
+    let fullStarImage = UIImage(named: "FullStar")
+    let emptyStarImage = UIImage(named: "EmptyStar")
+    let halfStarImage = UIImage(named: "HalfStar")
+    var allStars: [StarsImageView] = []
     
     init(withRating rating: Double) {
         self.rating = rating
@@ -181,8 +181,10 @@ class StarsView: UIView {
             delegate.ratingDidChange(to: currentRating)
         }
     }
-    
-    private func setupConstraints() {
+}
+
+extension StarsView {
+    func setupConstraints() {
         for i in 0...allStars.count-1 {
             
             let starImageView = allStars[i]
@@ -259,5 +261,4 @@ class StarsView: UIView {
             viewTrailing]
         )
     }
-    
 }

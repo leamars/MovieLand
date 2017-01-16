@@ -15,15 +15,15 @@ protocol MovieDetailsDelegate: class {
 class MovieDetailViewController: UIViewController {
     
     weak var delegate: MovieDetailsDelegate?
+    let locationManager = LocationManager()
     
+    // Data
     var movie: Movie
     
+    // UI
     let imageView = UIImageView()
-    
     let topDetailView: TopDetailView
     let bottomDetailView: BottomDetailView
-    
-    let locationManager = LocationManager()
     
     init(with movie: Movie) {
         
@@ -45,7 +45,9 @@ class MovieDetailViewController: UIViewController {
         setupView()
     }
     
-    func setupView() {
+    private func setupView() {
+        
+        setupGestures()
         
         // Image View
         imageView.image = movie.image
@@ -57,22 +59,28 @@ class MovieDetailViewController: UIViewController {
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(blurEffectView)
-                
+        
+        // Top Detail View
         topDetailView.detailDelegate = self
         view.addSubview(topDetailView)
         
+        // Bottom Detail View
         bottomDetailView.delegate = self
         view.addSubview(bottomDetailView)
+        
+        setupConstraints()
+    }
+    
+    private func setupGestures() {
         
         // Swipe down recognizer
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(close))
         swipeDown.direction = UISwipeGestureRecognizerDirection.down
         view.addGestureRecognizer(swipeDown)
-        
-        setupConstraints()
     }
     
-    func close() {
+    @objc private func close() {
+        
         modalTransitionStyle = .coverVertical
         dismiss(animated: true, completion: nil)
     }
@@ -87,9 +95,10 @@ extension MovieDetailViewController: TopDetailViewDelegate {
 
 extension MovieDetailViewController: BottomDetailDelegate {
     func didTap(on theatre: TheatreView) {
-        // Show Alert for ticket booked
+        
+        // Show alert to buy ticket
         let alertController = UIAlertController(title: "Ahoy Movie Buff!", message:
-            "So, you're trying to see \(movie.title) at the wonderful \(theatre.title)?", preferredStyle: UIAlertControllerStyle.alert)
+            "So, you're trying to see \(movie.title) at the wonderful \(theatre.title) theatre?", preferredStyle: UIAlertControllerStyle.alert)
         
         alertController.addAction(UIAlertAction(title: "Buy Ticket", style: UIAlertActionStyle.default, handler: nil))
         alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))

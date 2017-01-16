@@ -22,9 +22,9 @@ class TheatreView: UIView {
     var imageName: String
     
     // UI
-    private let titleLabel = UILabel()
-    private let milesLabel = UILabel()
-    private let imageView = UIImageView()
+    let titleLabel = UILabel()
+    let milesLabel = UILabel()
+    let imageView = UIImageView()
     
     init(with title: String, distance: Float, imageName:String) {
         self.title = title
@@ -78,8 +78,10 @@ class TheatreView: UIView {
         
         setupConstraints()
     }
-    
-    private func setupConstraints() {
+}
+
+extension TheatreView {
+    func setupConstraints() {
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit

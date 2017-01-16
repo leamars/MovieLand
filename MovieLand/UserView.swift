@@ -10,12 +10,13 @@ import UIKit
 
 class UserView: UIView {
     
-    private let numberRated: Int
+    // Data
+    let numberRated: Int
     
     // UI
-    private let nameLabel = UILabel()
-    private let ratingDescription = UILabel()
-    private let userMessage = UILabel()
+    let nameLabel = UILabel()
+    let ratingDescription = UILabel()
+    let userMessage = UILabel()
     
     enum MessageForNumber: Int {
         case Surface = 1
@@ -87,8 +88,10 @@ class UserView: UIView {
         
         setupConstraints()
     }
-    
-    private func setupConstraints() {
+}
+
+extension UserView {
+    func setupConstraints() {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         
         let nameCenterX = NSLayoutConstraint(
@@ -178,7 +181,7 @@ class UserView: UIView {
             attribute: .width,
             multiplier: 0.9,
             constant: 0.0)
-
+        
         
         addConstraints([
             userCenterX,
