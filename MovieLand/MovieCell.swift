@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol MovieCellDelegate: class {
+    func forceTouchReceived(in movieCell: MovieCell, at point: CGPoint)
+}
+
 class MovieCell: UICollectionViewCell {
     
     static let identifier = "MovieCell"
+    
+    weak var forceTouchDelegate: MovieCellDelegate?
     
     // UI
     let imageView = UIImageView()
@@ -41,6 +47,35 @@ class MovieCell: UICollectionViewCell {
         super.prepareForReuse()
     }
     
+    //MARK: Touches
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if #available(iOS 9.0, *) {
+                if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+                    // 3D Touch capable
+                    let pointOnCell = touch.location(in: contentView)
+                    if let pointInScreen = touch.view?.convert(pointOnCell, to: nil) {
+                        quickViewOpen(at: pointInScreen)
+                    }
+                }
+            }
+        }
+    }
+    
+    @objc private func didLongPress(with gestureRecognizer: UILongPressGestureRecognizer) {
+        let pointOnCell = gestureRecognizer.location(in: contentView)
+        if let pointInScreen = gestureRecognizer.view?.convert(pointOnCell, to: nil) {
+            quickViewOpen(at: pointInScreen)
+        }
+    }
+    
+    private func quickViewOpen(at point: CGPoint) {
+        if let delegate = forceTouchDelegate {
+            delegate.forceTouchReceived(in: self, at: point)
+        }
+    }
+    
     //MARK: Private
     private func setupViews() {
 
@@ -62,6 +97,10 @@ class MovieCell: UICollectionViewCell {
         titleLabel.numberOfLines = 3
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont.brown(withSize: 14)
+        
+        // Long Press gesture recognizer
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress(with:)))
+        containerView.addGestureRecognizer(longPressRecognizer)
         
         setupConstraints()
     }

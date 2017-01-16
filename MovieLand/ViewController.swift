@@ -10,7 +10,7 @@ import UIKit
 
 let tableTopOffset:CGFloat = 20
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FiltersViewDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Content view - table view + offset
     var containerView: UIView = UIView()
@@ -23,42 +23,59 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var filterView: FiltersView = FiltersView()
     var filtersOpen = false
     let filtersViewCompactSize:CGFloat = 180
-    let filtersViewExpandedSize:CGFloat = 350
+    let filtersViewExpandedSize:CGFloat = 360
+    
+    // User View
+    let userView: UserView = UserView(numberRated: 76) // Should get the right number
     
     let locationManager = LocationManager()
+    
+    // Presentation
+    var isPresenting: Bool = false
     
     // SearchController
     var searchController = UISearchController(searchResultsController: nil)
     
+    // Filtering
+    var filterGenres: [Genre] = []
+    
+    // Empty Vie
+    var emptyView = UIImageView(image: UIImage(named: "movieLandSad")!)
+    
     enum Mode: String {
         case Default
         case Search
+        case GenreSearch
         
-        func data(with searchQuery: String?) -> [Genre: [Movie]] {
+        func movieData(for movies: [Movie], with searchQuery: String?, for genres: [Genre]) -> [Genre: [Movie]] {
             switch self {
             case .Default:
-                return MovieStore.moviesBySection()
+                return MovieStore.dividedBySection(movies: movies)
             case .Search:
                 if let query = searchQuery {
-                    return MovieStore.movies(for: query.lowercased())
+                    return MovieStore.searchResults(on: movies, for: query.lowercased())
                 } else {
-                    return MovieStore.moviesBySection()
+                    return MovieStore.dividedBySection(movies: movies)
                 }
+            case .GenreSearch:
+                return MovieStore.genreResults(on: movies, for: genres)
             }
         }
     }
     
     var mode: Mode = .Default
     
+    var allMovies:[Movie] = []
     var movieSections: [Genre: [Movie]] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        
         tableView.dataSource = self
         tableView.delegate = self
+        
+        allMovies = (UIApplication.shared.delegate as! AppDelegate).movies
         
         setupViews()
         
@@ -82,7 +99,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func setupViews() {
         
-        movieSections = mode.data(with: nil)
+        movieSections = mode.movieData(for: allMovies, with: nil, for: [])
         filterView.filtersViewDelegate = self
         
         view.backgroundColor = UIColor.yellow
@@ -98,32 +115,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // Filter View
         filterView.backgroundColor = UIColor.yellow
-        //TODO: How to get filter view to have a nice shadow
-//        filterView.layer.shadowColor = UIColor.black.cgColor
-//        filterView.layer.masksToBounds = false
-//        filterView.layer.shadowOffset = CGSize(width: 0, height: 5)
-//        filterView.layer.shadowRadius = 5
-//        filterView.layer.shadowOpacity = 0.2
         view.addSubview(filterView)
         
+        // User View
+        view.addSubview(userView)
+        
         setupConstraints()
-    }
-    
-    //MARK: Search controller delegate
-    func searchControllerDidChange(with searchQuery: String?) {
-        if searchQuery != nil && searchQuery != "" {
-            mode = .Search
-            movieSections = mode.data(with: searchQuery)
-        } else {
-            mode = .Default
-            movieSections = mode.data(with: nil)
-        }
-        
-        tableView.reloadData()
-    }
-    
-    func showFilters() {
-        
     }
     
     //MARK: Table View:
@@ -163,7 +160,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.movieCollectionView.setContentOffset(CGPoint.zero, animated: false)
         }
     }
-    
 
     //MARK: ScrollView:
     //TODO: 
@@ -179,16 +175,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        // when you've pulled down hal of the filters view
+        // when you've pulled down half of the filters view
+        
         if -scrollView.contentOffset.y > filterView.bounds.height/2 {
-            openFilters()
+            
+            if !filtersOpen {
+                openFilters()
+            } else {
+                openUserAccount()
+            }
         }
+        
     }
     
     func closeFilters() {
         view.layoutIfNeeded()
         UIView.animate(withDuration: 0.4, animations: {
-            self.tableTopConstraint.constant = tableTopOffset
+            self.tableTopConstraint.constant = 0
             self.view.layoutIfNeeded()
             self.filtersOpen = false
         })
@@ -202,15 +205,112 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.filtersOpen = true
         })
     }
+    
+    func openUserAccount() {
+        view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.4, animations: {
+            self.tableTopConstraint.constant = self.filtersViewExpandedSize + tableTopOffset
+            self.view.layoutIfNeeded()
+            self.filtersOpen = true
+        })
+    }
+    
+    func closeUserAccount() {
+        view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.4, animations: {
+            self.tableTopConstraint.constant = 0
+            self.view.layoutIfNeeded()
+            self.filtersOpen = false
+        })
+    }
 }
 
+//MARK: Search controller delegate
+extension ViewController: FiltersViewDelegate {
+
+    func searchControllerDidChange(with searchQuery: String?) {
+        if searchQuery != nil && searchQuery != "" {
+            mode = .Search
+            movieSections = mode.movieData(for: allMovies, with: searchQuery, for: [])
+        } else {
+            mode = .Default
+            movieSections = mode.movieData(for: allMovies, with: nil, for: [])
+        }
+        
+        tableView.reloadData()
+    }
+    
+    func filtersDidSelect(new genre: Genre) {
+        mode = .GenreSearch
+        filterGenres.append(genre)
+        
+        movieSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
+        
+        tableView.reloadData()
+    }
+    
+    func filtersDidDeselect(new genre: Genre) {
+        let index = filterGenres.index(of: genre)
+        filterGenres.remove(at: index!)
+        if filterGenres.count > 0 {
+            mode = .GenreSearch
+            movieSections = mode.movieData(for: allMovies, with: nil, for: filterGenres)
+        } else {
+            mode = .Default
+            movieSections = mode.movieData(for: allMovies, with: nil, for: [])
+        }
+        
+        tableView.reloadData()
+    }
+}
+
+//MARK: QuickMovieDetails Delegate
+extension ViewController: QuickMovieDetailsDelegate {
+    func quickMovieDidDismiss() {
+        view.isUserInteractionEnabled = true
+        isPresenting = false
+    }
+    
+    func userRating(for movie: Movie, wasChanged toRating: Double) {
+        let movieIndex = allMovies.index(of: movie)
+        let newMovie = movie
+        newMovie.yourActualRating = toRating
+        allMovies[movieIndex!] = newMovie
+    }
+}
+
+//MARK: MovieDetailsDelegate Delegate
+extension ViewController: MovieDetailsDelegate {
+    func movie(updated movie: Movie, with rating: Double) {
+        let movieIndex = allMovies.index(of: movie)
+        let newMovie = movie
+        newMovie.yourActualRating = rating
+        allMovies[movieIndex!] = newMovie
+    }
+}
+
+//MARK: MovieCollectionCell Delegate
 extension ViewController: MovieCollectionCellDelegate {
+    
     func movieCellWasTapped(movieCell: MovieCell) {
         if let movie = movieCell.movie {
             let detailVC = MovieDetailViewController(with: movie)
+            detailVC.delegate = self
             detailVC.modalPresentationStyle = .overCurrentContext
             present(detailVC, animated: true, completion: nil)
         }
     }
+    
+    func forceTouchReceived(for movieCell: MovieCell, at point: CGPoint) {
+        view.isUserInteractionEnabled = false
+        if let movie = movieCell.movie, !isPresenting {
+            let detailVC = QuickMovieDetailsViewController(with: movie, touchReceivedAt: point)
+            detailVC.modalPresentationStyle = .overCurrentContext
+            detailVC.delegate = self
+            isPresenting = true
+            present(detailVC, animated: false, completion: nil)
+        }
+    }
 }
+
 

@@ -10,23 +10,9 @@ import UIKit
 
 class TheatreView: UIView {
     
-    var title: String {
-        didSet {
-            titleLabel.text = title
-        }
-    }
-    
-    var milesAway: Float {
-        didSet {
-            milesLabel.text = "\(milesAway) miles"
-        }
-    }
-    
-    var imageName: String {
-        didSet {
-            imageView.image = UIImage(named: imageName)
-        }
-    }
+    var title: String
+    var milesAway: Float
+    var imageName: String
     
     let titleLabel = UILabel()
     let milesLabel = UILabel()
@@ -44,8 +30,16 @@ class TheatreView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+        
+    private func setupData() {
+        titleLabel.text = title
+        milesLabel.text = "\(milesAway) miles"
+        imageView.image = UIImage(named: imageName)
+    }
     
-    func setupViews() {
+    private func setupViews() {
+        
+        setupData()
         
         // Image View
         imageView.layer.shadowColor = UIColor.black.cgColor
@@ -66,13 +60,13 @@ class TheatreView: UIView {
         setupConstraints()
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         
         let imageCenterX = NSLayoutConstraint(
-            item: titleLabel,
+            item: imageView,
             attribute: .centerX,
             relatedBy: .equal,
             toItem: self,
@@ -80,28 +74,18 @@ class TheatreView: UIView {
             multiplier: 1.0,
             constant: 0.0)
         
-        let imageCenterY = NSLayoutConstraint(
-            item: titleLabel,
-            attribute: .centerY,
+        let imageTop = NSLayoutConstraint(
+            item: imageView,
+            attribute: .top,
             relatedBy: .equal,
             toItem: self,
             attribute: .top,
             multiplier: 1.0,
             constant: 0.0)
         
-        let imageHeight = NSLayoutConstraint(
-            item: titleLabel,
-            attribute: .height,
-            relatedBy: .equal,
-            toItem: self,
-            attribute: .height,
-            multiplier: 0.8,
-            constant: 0.0)
-        
         addConstraints([
-            imageCenterY,
-            imageCenterX,
-            imageHeight]
+            imageTop,
+            imageCenterX]
         )
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -152,6 +136,29 @@ class TheatreView: UIView {
         addConstraints([
             milesCenterX,
             milesTop]
+        )
+        
+        let viewTrailing = NSLayoutConstraint(
+            item: self,
+            attribute: .trailing,
+            relatedBy: .equal,
+            toItem: imageView,
+            attribute: .trailing,
+            multiplier: 1.0,
+            constant: 5.0)
+        
+        let viewBottom = NSLayoutConstraint(
+            item: self,
+            attribute: .bottom,
+            relatedBy: .equal,
+            toItem: milesLabel,
+            attribute: .bottom,
+            multiplier: 1.0,
+            constant: 0.0)
+        
+        addConstraints([
+            viewTrailing,
+            viewBottom]
         )
     }
 }

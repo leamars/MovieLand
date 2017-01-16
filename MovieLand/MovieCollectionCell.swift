@@ -10,9 +10,10 @@ import UIKit
 
 protocol MovieCollectionCellDelegate: class {
     func movieCellWasTapped(movieCell: MovieCell)
+    func forceTouchReceived(for movieCell: MovieCell, at point: CGPoint)
 }
 
-class MovieCollectionCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class MovieCollectionCell: UITableViewCell {
     
     static let identifier = "MovieCollectionCell"
     
@@ -65,54 +66,6 @@ class MovieCollectionCell: UITableViewCell, UICollectionViewDataSource, UICollec
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-
-    //MARK: Collection View Data Source:
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return collectionData.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let identifier = MovieCell.identifier
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? MovieCell {
-            cell.movie = collectionData[indexPath.section]
-            return cell
-        }
-        
-        return UICollectionViewCell()
-    }
-    
-    //MARK: Collection View Delegate:
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        guard let cell = collectionView.cellForItem(at: indexPath) as? MovieCell,
-            let delegate = movieCollectionCellDelegate else {
-            return
-        }
-        
-        delegate.movieCellWasTapped(movieCell: cell)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        
-    }
-    
-    //MARK: UICollectionViewDelegateFlowLayout
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: 140, height: 230)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsetsMake(0, 5, 0, 5)
     }
     
     //MARK: Setup
@@ -304,5 +257,66 @@ class MovieCollectionCell: UITableViewCell, UICollectionViewDataSource, UICollec
             movieContentBottom,
             movieContentWidth]
         )
+    }
+}
+
+extension MovieCollectionCell: MovieCellDelegate {
+    
+    func forceTouchReceived(in movieCell: MovieCell, at point: CGPoint) {
+        if let delegate = movieCollectionCellDelegate {
+            delegate.forceTouchReceived(for: movieCell, at: point)
+        }
+    }
+}
+
+extension MovieCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    //MARK: Collection View Data Source:
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return collectionData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let identifier = MovieCell.identifier
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? MovieCell {
+            cell.movie = collectionData[indexPath.section]
+            cell.forceTouchDelegate = self
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    //MARK: Collection View Delegate:
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) as? MovieCell,
+            let delegate = movieCollectionCellDelegate else {
+                return
+        }
+        
+        delegate.movieCellWasTapped(movieCell: cell)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    //MARK: UICollectionViewDelegateFlowLayout
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: 140, height: 230)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        return UIEdgeInsetsMake(0, 5, 0, 5)
     }
 }

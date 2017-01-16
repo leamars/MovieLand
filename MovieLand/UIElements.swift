@@ -35,3 +35,23 @@ extension UILabel {
         return UILabel()
     }
 }
+
+extension UIImage {
+    
+    func grayscaleImage() -> UIImage {
+        // reference: http://stackoverflow.com/questions/1298867/convert-image-to-grayscale  jan 15 answer
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        let imageRect = CGRect(x: CGFloat(0.0), y: CGFloat(0.0), width: CGFloat(self.size.width), height: CGFloat(self.size.height))
+        let ctx = UIGraphicsGetCurrentContext()
+        // Draw a white background
+        ctx?.setFillColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        ctx?.fill(imageRect)
+        // Draw the luminosity on top of the white background to get grayscale
+        self.draw(in: imageRect, blendMode: .luminosity, alpha: 1.0)
+        // Apply the source image's alpha
+        self.draw(in: imageRect, blendMode: .destinationIn, alpha: 1.0)
+        let grayscaleImage: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return grayscaleImage!
+    }
+}

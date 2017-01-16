@@ -75,6 +75,69 @@ struct MovieStore {
         return parseMovies()
     }
     
+    static func dividedBySection(movies: [Movie]) -> [Genre: [Movie]] {
+        var moviesBySection: [Genre:[Movie]] = [:]
+        for movie in movies {
+            for genre in movie.genres {
+                if let existingSection = moviesBySection[genre] {
+                    var sectionCopy = existingSection
+                    sectionCopy.append(movie)
+                    moviesBySection[genre] = sectionCopy
+                } else {
+                    moviesBySection[genre] = [movie]
+                }
+            }
+        }
+        
+        return moviesBySection
+    }
+    
+    static func genreResults(on movies: [Movie], for genres: [Genre]) -> [Genre: [Movie]] {        
+        let moviesToKeep = movies.filter { (movie) -> Bool in
+            return movie.genres.filter({ (genre) -> Bool in
+                return genres.index(of: genre) != nil
+            }).count > 0
+        }
+        
+        return dividedBySection(movies: moviesToKeep)
+    }
+    
+    static func searchResults(on movies: [Movie], for query:String) -> [Genre: [Movie]] {
+        // search by actor, director, year, languages,
+        var searchResults: [Genre: [Movie]] = [:]
+        
+        let titleResults = movies.filter { (movie) -> Bool in
+            return movie.title.components(separatedBy: " ").filter({ (titlePart) -> Bool in
+                return titlePart.lowercased() == query
+            }).count > 0
+        }
+        
+        let directorResults = movies.filter { (movie) -> Bool in
+            return movie.director.components(separatedBy: " ").filter({ (directorPart) -> Bool in
+                return directorPart.lowercased() == query
+            }).count > 0
+        }
+
+        let yearResults = movies.filter{ String($0.year) == query }
+        
+        let castResults = movies.filter { (movie) -> Bool in
+            return movie.cast.filter({ (castMember) -> Bool in
+                return castMember.lowercased() == query
+            }).count > 0
+        }
+        
+        let languageResults = movies.filter { (movie) -> Bool in
+            return movie.languages.filter({ (language) -> Bool in
+                return language.lowercased() == query
+            }).count > 0
+        }
+        
+        let combinedResults = titleResults + directorResults + yearResults + castResults + languageResults
+                
+        searchResults[.Recommended] = combinedResults
+        return searchResults
+    }
+    
     static func moviesBySection() -> [Genre: [Movie]] {
         
         var moviesBySection: [Genre:[Movie]] = [:]
@@ -141,7 +204,7 @@ struct MovieStore {
                 cast: dict["cast"] as! [String],
                 director: dict["director"] as! String,
                 genres: genres,
-                rating: dict["rating"] as! Float,
+                rating: dict["rating"] as! Double,
                 description: dict["description"] as! String,
                 admissionRating: AdmissionRating(rawValue: dict["admissionRating"] as! String)!,
                 image: UIImage(named: dict["imageName"] as! String)!)
@@ -151,7 +214,7 @@ struct MovieStore {
     }
 }
 
-class Movie {
+class Movie: Equatable {
     let title: String
     let year: Int
     let length: Int // Minutes
@@ -159,12 +222,14 @@ class Movie {
     let cast: [String]
     let director: String
     let genres: [Genre]
-    let rating: Float
+    let rating: Double
     let description: String
     let admissionRating: AdmissionRating
+    let yourPredictedRating: Double
+    var yourActualRating: Double?
     let image: UIImage
     
-    init(title: String, year: Int, length: Int, languages: [String], cast: [String], director: String, genres: [Genre], rating: Float, description: String, admissionRating: AdmissionRating, image: UIImage) {
+    init(title: String, year: Int, length: Int, languages: [String], cast: [String], director: String, genres: [Genre], rating: Double, description: String, admissionRating: AdmissionRating, image: UIImage) {
         self.title = title
         self.year = year
         self.length = length
@@ -175,6 +240,26 @@ class Movie {
         self.rating = rating
         self.description = description
         self.admissionRating = admissionRating
-        self.image = image        
+        self.image = image
+        // This defaults to audience rating + or - 0.5 for presentation sake
+        // We're not building a real prediction engine here
+        let diceRoll = Int(arc4random_uniform(3)) - 1
+        let yourPredictedRating = rating + Double(diceRoll) * 0.5
+        self.yourPredictedRating = yourPredictedRating > 5 ? 5 : yourPredictedRating
+        self.yourActualRating = nil
+    }
+
+    static func == (lhs: Movie, rhs: Movie) -> Bool {
+        return
+        lhs.title == rhs.title &&
+        lhs.year == rhs.year &&
+        lhs.length == rhs.length &&
+        lhs.languages == rhs.languages &&
+        lhs.cast == rhs.cast &&
+        lhs.director == rhs.director &&
+        lhs.genres == rhs.genres &&
+        lhs.rating == rhs.rating &&
+        lhs.description == rhs.description &&
+        lhs.admissionRating == rhs.admissionRating
     }
 }

@@ -245,41 +245,6 @@
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Bright Lights: Starring Carrie Fisher and Debbie Reynolds</string>
-			<key>year</key>
-			<integer>2017</integer>
-			<key>length</key>
-			<integer>95</integer>
-			<key>languages</key>
-			<array>
-				<string>English</string>
-			</array>
-			<key>cast</key>
-			<array>
-				<string>Carrie Fisher</string>
-				<string>Debbie Reynolds</string>
-				<string>Todd Fisher</string>
-				<string>Eddie Fisher</string>
-				<string>Griffin Dunne</string>
-				<string>Billie Lourd</string>
-			</array>
-			<key>director</key>
-			<string>Alexis Bloom</string>
-			<key>genres</key>
-			<array>
-				<string>Documentary</string>
-			</array>
-			<key>rating</key>
-			<integer>4</integer>
-			<key>description</key>
-			<string>An intimate portrait of Hollywood royalty featuring Debbie Reynolds, Todd Fisher, and Carrie Fisher.</string>
-			<key>admissionRating</key>
-			<string>PG13</string>
-			<key>imageName</key>
-			<string>moviePlaceholder</string>
-		</dict>
-		<dict>
-			<key>title</key>
 			<string>Collateral</string>
 			<key>year</key>
 			<integer>2004</integer>
@@ -318,7 +283,7 @@
 			<string>Michael Mann</string>
 			<key>genres</key>
 			<array>
-				<string>Animation</string>
+				<string>Action</string>
 			</array>
 			<key>rating</key>
 			<real>4.5</real>

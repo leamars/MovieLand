@@ -10,54 +10,8 @@ import UIKit
 
 extension FiltersView {
     func setupConstraints() {
-        underlineView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let underlineHeight = NSLayoutConstraint(
-            item: underlineView,
-            attribute: .height,
-            relatedBy: .equal,
-            toItem: nil,
-            attribute: .notAnAttribute,
-            multiplier: 1.0,
-            constant: tableTopOffset)
-        
-        let underlineCenterX = NSLayoutConstraint(
-            item: underlineView,
-            attribute: .centerX,
-            relatedBy: .equal,
-            toItem: self,
-            attribute: .centerX,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let underlineWidth = NSLayoutConstraint(
-            item: underlineView,
-            attribute: .width,
-            relatedBy: .equal,
-            toItem: self,
-            attribute: .width,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        let underlineBottom = NSLayoutConstraint(
-            item: underlineView,
-            attribute: .bottom,
-            relatedBy: .equal,
-            toItem: self,
-            attribute: .bottom,
-            multiplier: 1.0,
-            constant: 0.0)
-        
-        addConstraints([
-            underlineHeight,
-            underlineWidth,
-            underlineBottom,
-            underlineCenterX]
-        )
         
         genresLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        // Let's not anchor this to the searchbar
         
         let genresLeft = NSLayoutConstraint(
             item: genresLabel,

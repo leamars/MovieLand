@@ -8,32 +8,28 @@
 
 import UIKit
 
+protocol MovieDetailsDelegate: class {
+    func movie(updated movie: Movie, with rating: Double)
+}
+
 class MovieDetailViewController: UIViewController {
+    
+    weak var delegate: MovieDetailsDelegate?
     
     var movieData: Movie
     
     let imageView = UIImageView()
     let closeButton = UIButton()
     
-    let genreLabel = UILabel()
-    let languagesLabel = UILabel()
-    let buyLabel = UILabel()
-    let descriptionLabel = UILabel()
-    let bottomContainerView = UIView()
-    
-    let topContainerView = UIView()
-    let overallLabel = UILabel()
-    let overallRatingView = UIView()
-    let titleLabel = UILabel()
-    let yearLabel = UILabel()
-    let admissionRatingLabel = UILabel()
-    let lengthLabel = UILabel()
-    let predictionLabel = UILabel()
-    let predictionRating = UIView()
-    let yourRating = UIView()
+    let topDetailView: TopDetailView
+    let bottomDetailView: BottomDetailView
     
     init(with movie: Movie) {
+        
         self.movieData = movie
+        self.topDetailView = TopDetailView(with: movie)
+        self.bottomDetailView = BottomDetailView(with: movie)
+        
         super.init(nibName: nil, bundle: nil)
         modalTransitionStyle = .crossDissolve
     }
@@ -45,29 +41,7 @@ class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.layer.cornerRadius = 50
-        setupText()
         setupView()
-    }
-    
-    //TODO: Why doesn't this go into the didSet method of the movieData
-    func setupText() {
-        // Top View:
-        overallLabel.text = "OVERALL: "
-        //TODO: Overall rating view
-        titleLabel.text = movieData.title
-        yearLabel.text = "\(movieData.year)"
-        admissionRatingLabel.text = "\(movieData.admissionRating.rawValue)"
-        lengthLabel.text = "\(movieData.length)"
-        predictionLabel.text = "PREDICTION: "
-        //TODO: Prediction RATING
-        //TODO: your rating
-        
-        // Bottom View:
-        genreLabel.text = "GENRES: " + movieData.genres.map { $0.rawValue }.joined(separator: ", ")
-        languagesLabel.text = "LANGUAGES: " + movieData.languages.joined(separator: ", ")
-        buyLabel.text = "BUY TICKETS"
-        //TODO: Theatre Views
-        descriptionLabel.text = movieData.description
     }
     
     func setupView() {
@@ -88,80 +62,33 @@ class MovieDetailViewController: UIViewController {
         closeButton.setTitle("CLOSE", for: .normal)
         closeButton.setTitle("CLOSE", for: .highlighted)
         closeButton.setTitle("CLOSE", for: .selected)
-        closeButton.setTitleColor(UIColor.black, for: .normal)
+        closeButton.setTitleColor(UIColor.clear, for: .normal)
         //view.addSubview(closeButton)
-        bottomContainerView.addSubview(closeButton)
+        bottomDetailView.addSubview(closeButton)
         
-        // Top Container View
-        overallLabel.font = UIFont.brownBold(withSize: 14)
-        overallLabel.textColor = UIColor.white
-        overallLabel.numberOfLines = 0
-        overallLabel.textAlignment = .center
-        topContainerView.addSubview(overallLabel)
+        topDetailView.detailDelegate = self
+        view.addSubview(topDetailView)
+        view.addSubview(bottomDetailView)
         
-        topContainerView.addSubview(overallRatingView)
-        
-        titleLabel.font = UIFont.brownBold(withSize: 24)
-        titleLabel.textColor = UIColor.white
-        titleLabel.numberOfLines = 0
-        titleLabel.textAlignment = .center
-        topContainerView.addSubview(titleLabel)
-        
-        yearLabel.font = UIFont.brownBold(withSize: 12)
-        yearLabel.textColor = UIColor.white
-        yearLabel.numberOfLines = 0
-        topContainerView.addSubview(yearLabel)
-        
-        admissionRatingLabel.font = UIFont.brownBold(withSize: 12)
-        admissionRatingLabel.layer.borderColor = UIColor.white.cgColor
-        admissionRatingLabel.layer.borderWidth = 2
-        admissionRatingLabel.textColor = UIColor.white
-        admissionRatingLabel.numberOfLines = 0
-        topContainerView.addSubview(admissionRatingLabel)
-        
-        lengthLabel.font = UIFont.brownBold(withSize: 12)
-        lengthLabel.textColor = UIColor.white
-        lengthLabel.numberOfLines = 0
-        topContainerView.addSubview(lengthLabel)
-        
-        predictionLabel.font = UIFont.brownBold(withSize: 14)
-        predictionLabel.textColor = UIColor.white
-        predictionLabel.numberOfLines = 0
-        topContainerView.addSubview(predictionLabel)
-        
-        view.addSubview(topContainerView)
-        
-        // Bottom Container View
-        genreLabel.font = UIFont.brownBold(withSize: 14)
-        genreLabel.textColor = UIColor.black
-        genreLabel.numberOfLines = 0
-        bottomContainerView.addSubview(genreLabel)
-        
-        languagesLabel.font = UIFont.brownBold(withSize: 14)
-        languagesLabel.textColor = UIColor.black
-        languagesLabel.numberOfLines = 0
-        bottomContainerView.addSubview(languagesLabel)
-        
-        buyLabel.font = UIFont.brownBold(withSize: 18)
-        buyLabel.textColor = UIColor.black
-        buyLabel.textAlignment = .center
-        bottomContainerView.addSubview(buyLabel)
-    
-        //TODO: Add theatre views here!
-        
-        descriptionLabel.font = UIFont.brown(withSize: 12)
-        descriptionLabel.textColor = UIColor.black
-        descriptionLabel.numberOfLines = 0
-        descriptionLabel.textAlignment = .center
-        bottomContainerView.addSubview(descriptionLabel)
-        
-        bottomContainerView.backgroundColor = UIColor.white.withAlphaComponent(0.7)
-        view.addSubview(bottomContainerView)
+        // Swipe down recognizer
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(close))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+        view.addGestureRecognizer(swipeDown)
         
         setupConstraints()
     }
     
     func close() {
+        modalTransitionStyle = .coverVertical
         dismiss(animated: true, completion: nil)
     }
 }
+
+extension MovieDetailViewController: TopDetailViewDelegate {
+    func userRating(for movie: Movie, wasChanged to: Double) {
+        if let delegate = delegate {
+            delegate.movie(updated: movie, with: to)
+        }
+    }
+}
+

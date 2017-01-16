@@ -10,6 +10,8 @@ import UIKit
 
 protocol FiltersViewDelegate: class {
     func searchControllerDidChange(with searchQuery: String?)
+    func filtersDidSelect(new genre: Genre)
+    func filtersDidDeselect(new genre: Genre)
 }
 
 class FiltersView: UIView, UISearchResultsUpdating, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -30,7 +32,6 @@ class FiltersView: UIView, UISearchResultsUpdating, UISearchBarDelegate, UIColle
     
     // Search Controller
     let searchController: UISearchController = UISearchController(searchResultsController: nil)
-    let underlineView: UIView = UIView()
     
     // Genres
     let genresLabel:UILabel = UILabel()
@@ -68,9 +69,9 @@ class FiltersView: UIView, UISearchResultsUpdating, UISearchBarDelegate, UIColle
         // Get search query
         let searchQuery = searchController.searchBar.text
         
-        // Query the dataBase for the query
-        
-        // Update the results
+        // Sent the handling to the delegate where we:
+        // 1. Query the dataBase for the query
+        // 2. Update the results
         
         if let delegate = filtersViewDelegate,
             let query = searchQuery {
@@ -139,6 +140,10 @@ class FiltersView: UIView, UISearchResultsUpdating, UISearchBarDelegate, UIColle
             genreFilter.added = !genreFilter.added
             // Add to another array
             allSelected.append(genreFilter)
+            
+            if let delegate = filtersViewDelegate {
+                delegate.filtersDidSelect(new: Genre(rawValue: genreFilter.name)!)
+            }
         }
         
         if collectionView == selectedGenreCollectionView {
@@ -149,6 +154,10 @@ class FiltersView: UIView, UISearchResultsUpdating, UISearchBarDelegate, UIColle
             // Add to another array
             allDeselected.append(genreFilter)
             allDeselected = allDeselected.sorted{ $0.name < $1.name }
+            
+            if let delegate = filtersViewDelegate {
+                delegate.filtersDidDeselect(new: Genre(rawValue: genreFilter.name)!)
+            }
         }
         
         selectedGenreCollectionView.reloadData()
@@ -188,7 +197,6 @@ class FiltersView: UIView, UISearchResultsUpdating, UISearchBarDelegate, UIColle
         searchController.dimsBackgroundDuringPresentation = true
         searchController.searchBar.placeholder = "Search here..."
         searchController.searchBar.delegate = self
-        searchController.searchBar.sizeToFit()
         searchController.searchBar.barTintColor = UIColor.yellow
         searchController.searchBar.searchBarStyle = .prominent
         // To get rid of the gray borders
@@ -198,10 +206,6 @@ class FiltersView: UIView, UISearchResultsUpdating, UISearchBarDelegate, UIColle
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.black], for: .normal)
         
         addSubview(searchController.searchBar)
-        
-        // underline view
-        addSubview(underlineView)
-        underlineView.backgroundColor = UIColor.yellow
         
         // genres
         addSubview(genresLabel)
